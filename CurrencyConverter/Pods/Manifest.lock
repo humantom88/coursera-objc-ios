@@ -1,0 +1,16 @@
+PODS:
+  - CurrencyRequest (0.2.1)
+
+DEPENDENCIES:
+  - CurrencyRequest
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CurrencyRequest
+
+SPEC CHECKSUMS:
+  CurrencyRequest: 92588153b6d3cfcd0497d0cdded3bd9ee27a5c3f
+
+PODFILE CHECKSUM: 3039c64919274ad940f7a4f5dcd2e246df94cbe5
+
+COCOAPODS: 1.5.3
