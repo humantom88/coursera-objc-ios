@@ -7,49 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FD2006222117BB4007BDC46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2006122117BB4007BDC46 /* AppDelegate.m */; };
-		1FD2006522117BB4007BDC46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2006422117BB4007BDC46 /* ViewController.m */; };
-		1FD2006822117BB4007BDC46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD2006622117BB4007BDC46 /* Main.storyboard */; };
-		1FD2006B22117BB4007BDC46 /* CoreDataCoursera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2006922117BB4007BDC46 /* CoreDataCoursera.xcdatamodeld */; };
-		1FD2006D22117BB5007BDC46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD2006C22117BB5007BDC46 /* Assets.xcassets */; };
-		1FD2007022117BB5007BDC46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD2006E22117BB5007BDC46 /* LaunchScreen.storyboard */; };
-		1FD2007322117BB5007BDC46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2007222117BB5007BDC46 /* main.m */; };
-		1FD2008522119D1E007BDC46 /* ChoreLogMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2007B22119D1E007BDC46 /* ChoreLogMO+CoreDataClass.m */; };
-		1FD2008622119D1E007BDC46 /* ChoreLogMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2007C22119D1E007BDC46 /* ChoreLogMO+CoreDataProperties.m */; };
-		1FD2008722119D1E007BDC46 /* ChoreMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2007F22119D1E007BDC46 /* ChoreMO+CoreDataClass.m */; };
-		1FD2008822119D1E007BDC46 /* ChoreMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2008022119D1E007BDC46 /* ChoreMO+CoreDataProperties.m */; };
-		1FD2008922119D1E007BDC46 /* PersonMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2008322119D1E007BDC46 /* PersonMO+CoreDataClass.m */; };
-		1FD2008A22119D1E007BDC46 /* PersonMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD2008422119D1E007BDC46 /* PersonMO+CoreDataProperties.m */; };
+		1F121A56221308E8001AEC93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A55221308E8001AEC93 /* AppDelegate.m */; };
+		1F121A59221308E8001AEC93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A58221308E8001AEC93 /* ViewController.m */; };
+		1F121A5C221308E8001AEC93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F121A5A221308E8001AEC93 /* Main.storyboard */; };
+		1F121A5F221308E8001AEC93 /* CoreDataCoursera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A5D221308E8001AEC93 /* CoreDataCoursera.xcdatamodeld */; };
+		1F121A61221308E8001AEC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F121A60221308E8001AEC93 /* Assets.xcassets */; };
+		1F121A64221308E8001AEC93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F121A62221308E8001AEC93 /* LaunchScreen.storyboard */; };
+		1F121A67221308E8001AEC93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A66221308E8001AEC93 /* main.m */; };
+		1F121A9D22130CE1001AEC93 /* PersonMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A9322130CE1001AEC93 /* PersonMO+CoreDataClass.m */; };
+		1F121A9E22130CE1001AEC93 /* PersonMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A9422130CE1001AEC93 /* PersonMO+CoreDataProperties.m */; };
+		1F121A9F22130CE1001AEC93 /* ChoreLogMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A9722130CE1001AEC93 /* ChoreLogMO+CoreDataClass.m */; };
+		1F121AA022130CE1001AEC93 /* ChoreLogMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A9822130CE1001AEC93 /* ChoreLogMO+CoreDataProperties.m */; };
+		1F121AA122130CE1001AEC93 /* ChoreMO+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A9B22130CE1001AEC93 /* ChoreMO+CoreDataClass.m */; };
+		1F121AA222130CE1001AEC93 /* ChoreMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F121A9C22130CE1001AEC93 /* ChoreMO+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1FD2005D22117BB4007BDC46 /* CoreDataCoursera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataCoursera.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FD2006022117BB4007BDC46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1FD2006122117BB4007BDC46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1FD2006322117BB4007BDC46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1FD2006422117BB4007BDC46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1FD2006722117BB4007BDC46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1FD2006A22117BB4007BDC46 /* CoreDataCoursera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataCoursera.xcdatamodel; sourceTree = "<group>"; };
-		1FD2006C22117BB5007BDC46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1FD2006F22117BB5007BDC46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1FD2007122117BB5007BDC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FD2007222117BB5007BDC46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1FD2007922119D1E007BDC46 /* ChoreLogMO+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChoreLogMO+CoreDataProperties.h"; sourceTree = "<group>"; };
-		1FD2007A22119D1E007BDC46 /* ChoreLogMO+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChoreLogMO+CoreDataClass.h"; sourceTree = "<group>"; };
-		1FD2007B22119D1E007BDC46 /* ChoreLogMO+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO+CoreDataClass.m"; sourceTree = "<group>"; };
-		1FD2007C22119D1E007BDC46 /* ChoreLogMO+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO+CoreDataProperties.m"; sourceTree = "<group>"; };
-		1FD2007D22119D1E007BDC46 /* ChoreMO+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChoreMO+CoreDataProperties.h"; sourceTree = "<group>"; };
-		1FD2007E22119D1E007BDC46 /* ChoreMO+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChoreMO+CoreDataClass.h"; sourceTree = "<group>"; };
-		1FD2007F22119D1E007BDC46 /* ChoreMO+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChoreMO+CoreDataClass.m"; sourceTree = "<group>"; };
-		1FD2008022119D1E007BDC46 /* ChoreMO+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChoreMO+CoreDataProperties.m"; sourceTree = "<group>"; };
-		1FD2008122119D1E007BDC46 /* PersonMO+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonMO+CoreDataProperties.h"; sourceTree = "<group>"; };
-		1FD2008222119D1E007BDC46 /* PersonMO+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonMO+CoreDataClass.h"; sourceTree = "<group>"; };
-		1FD2008322119D1E007BDC46 /* PersonMO+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonMO+CoreDataClass.m"; sourceTree = "<group>"; };
-		1FD2008422119D1E007BDC46 /* PersonMO+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F121A51221308E8001AEC93 /* CoreDataCoursera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataCoursera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F121A54221308E8001AEC93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F121A55221308E8001AEC93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F121A57221308E8001AEC93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F121A58221308E8001AEC93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F121A5B221308E8001AEC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F121A5E221308E8001AEC93 /* CoreDataCoursera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataCoursera.xcdatamodel; sourceTree = "<group>"; };
+		1F121A60221308E8001AEC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F121A63221308E8001AEC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F121A65221308E8001AEC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F121A66221308E8001AEC93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F121A9122130CE1001AEC93 /* PersonMO+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F121A9222130CE1001AEC93 /* PersonMO+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonMO+CoreDataClass.h"; sourceTree = "<group>"; };
+		1F121A9322130CE1001AEC93 /* PersonMO+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonMO+CoreDataClass.m"; sourceTree = "<group>"; };
+		1F121A9422130CE1001AEC93 /* PersonMO+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F121A9522130CE1001AEC93 /* ChoreLogMO+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChoreLogMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F121A9622130CE1001AEC93 /* ChoreLogMO+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChoreLogMO+CoreDataClass.h"; sourceTree = "<group>"; };
+		1F121A9722130CE1001AEC93 /* ChoreLogMO+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO+CoreDataClass.m"; sourceTree = "<group>"; };
+		1F121A9822130CE1001AEC93 /* ChoreLogMO+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChoreLogMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F121A9922130CE1001AEC93 /* ChoreMO+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChoreMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F121A9A22130CE1001AEC93 /* ChoreMO+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChoreMO+CoreDataClass.h"; sourceTree = "<group>"; };
+		1F121A9B22130CE1001AEC93 /* ChoreMO+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChoreMO+CoreDataClass.m"; sourceTree = "<group>"; };
+		1F121A9C22130CE1001AEC93 /* ChoreMO+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ChoreMO+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FD2005A22117BB4007BDC46 /* Frameworks */ = {
+		1F121A4E221308E8001AEC93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,47 +59,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FD2005422117BB4007BDC46 = {
+		1F121A48221308E8001AEC93 = {
 			isa = PBXGroup;
 			children = (
-				1FD2007922119D1E007BDC46 /* ChoreLogMO+CoreDataProperties.h */,
-				1FD2007A22119D1E007BDC46 /* ChoreLogMO+CoreDataClass.h */,
-				1FD2007B22119D1E007BDC46 /* ChoreLogMO+CoreDataClass.m */,
-				1FD2007C22119D1E007BDC46 /* ChoreLogMO+CoreDataProperties.m */,
-				1FD2007D22119D1E007BDC46 /* ChoreMO+CoreDataProperties.h */,
-				1FD2007E22119D1E007BDC46 /* ChoreMO+CoreDataClass.h */,
-				1FD2007F22119D1E007BDC46 /* ChoreMO+CoreDataClass.m */,
-				1FD2008022119D1E007BDC46 /* ChoreMO+CoreDataProperties.m */,
-				1FD2008122119D1E007BDC46 /* PersonMO+CoreDataProperties.h */,
-				1FD2008222119D1E007BDC46 /* PersonMO+CoreDataClass.h */,
-				1FD2008322119D1E007BDC46 /* PersonMO+CoreDataClass.m */,
-				1FD2008422119D1E007BDC46 /* PersonMO+CoreDataProperties.m */,
-				1FD2005F22117BB4007BDC46 /* CoreDataCoursera */,
-				1FD2005E22117BB4007BDC46 /* Products */,
+				1F121A9122130CE1001AEC93 /* PersonMO+CoreDataProperties.h */,
+				1F121A9222130CE1001AEC93 /* PersonMO+CoreDataClass.h */,
+				1F121A9322130CE1001AEC93 /* PersonMO+CoreDataClass.m */,
+				1F121A9422130CE1001AEC93 /* PersonMO+CoreDataProperties.m */,
+				1F121A9522130CE1001AEC93 /* ChoreLogMO+CoreDataProperties.h */,
+				1F121A9622130CE1001AEC93 /* ChoreLogMO+CoreDataClass.h */,
+				1F121A9722130CE1001AEC93 /* ChoreLogMO+CoreDataClass.m */,
+				1F121A9822130CE1001AEC93 /* ChoreLogMO+CoreDataProperties.m */,
+				1F121A9922130CE1001AEC93 /* ChoreMO+CoreDataProperties.h */,
+				1F121A9A22130CE1001AEC93 /* ChoreMO+CoreDataClass.h */,
+				1F121A9B22130CE1001AEC93 /* ChoreMO+CoreDataClass.m */,
+				1F121A9C22130CE1001AEC93 /* ChoreMO+CoreDataProperties.m */,
+				1F121A53221308E8001AEC93 /* CoreDataCoursera */,
+				1F121A52221308E8001AEC93 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1FD2005E22117BB4007BDC46 /* Products */ = {
+		1F121A52221308E8001AEC93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FD2005D22117BB4007BDC46 /* CoreDataCoursera.app */,
+				1F121A51221308E8001AEC93 /* CoreDataCoursera.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FD2005F22117BB4007BDC46 /* CoreDataCoursera */ = {
+		1F121A53221308E8001AEC93 /* CoreDataCoursera */ = {
 			isa = PBXGroup;
 			children = (
-				1FD2006022117BB4007BDC46 /* AppDelegate.h */,
-				1FD2006122117BB4007BDC46 /* AppDelegate.m */,
-				1FD2006322117BB4007BDC46 /* ViewController.h */,
-				1FD2006422117BB4007BDC46 /* ViewController.m */,
-				1FD2006622117BB4007BDC46 /* Main.storyboard */,
-				1FD2006C22117BB5007BDC46 /* Assets.xcassets */,
-				1FD2006E22117BB5007BDC46 /* LaunchScreen.storyboard */,
-				1FD2007122117BB5007BDC46 /* Info.plist */,
-				1FD2007222117BB5007BDC46 /* main.m */,
-				1FD2006922117BB4007BDC46 /* CoreDataCoursera.xcdatamodeld */,
+				1F121A54221308E8001AEC93 /* AppDelegate.h */,
+				1F121A55221308E8001AEC93 /* AppDelegate.m */,
+				1F121A57221308E8001AEC93 /* ViewController.h */,
+				1F121A58221308E8001AEC93 /* ViewController.m */,
+				1F121A5A221308E8001AEC93 /* Main.storyboard */,
+				1F121A60221308E8001AEC93 /* Assets.xcassets */,
+				1F121A62221308E8001AEC93 /* LaunchScreen.storyboard */,
+				1F121A65221308E8001AEC93 /* Info.plist */,
+				1F121A66221308E8001AEC93 /* main.m */,
+				1F121A5D221308E8001AEC93 /* CoreDataCoursera.xcdatamodeld */,
 			);
 			path = CoreDataCoursera;
 			sourceTree = "<group>";
@@ -107,13 +107,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1FD2005C22117BB4007BDC46 /* CoreDataCoursera */ = {
+		1F121A50221308E8001AEC93 /* CoreDataCoursera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FD2007622117BB5007BDC46 /* Build configuration list for PBXNativeTarget "CoreDataCoursera" */;
+			buildConfigurationList = 1F121A6A221308E8001AEC93 /* Build configuration list for PBXNativeTarget "CoreDataCoursera" */;
 			buildPhases = (
-				1FD2005922117BB4007BDC46 /* Sources */,
-				1FD2005A22117BB4007BDC46 /* Frameworks */,
-				1FD2005B22117BB4007BDC46 /* Resources */,
+				1F121A4D221308E8001AEC93 /* Sources */,
+				1F121A4E221308E8001AEC93 /* Frameworks */,
+				1F121A4F221308E8001AEC93 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -121,24 +121,24 @@
 			);
 			name = CoreDataCoursera;
 			productName = CoreDataCoursera;
-			productReference = 1FD2005D22117BB4007BDC46 /* CoreDataCoursera.app */;
+			productReference = 1F121A51221308E8001AEC93 /* CoreDataCoursera.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1FD2005522117BB4007BDC46 /* Project object */ = {
+		1F121A49221308E8001AEC93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Tom Belov";
 				TargetAttributes = {
-					1FD2005C22117BB4007BDC46 = {
+					1F121A50221308E8001AEC93 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 1FD2005822117BB4007BDC46 /* Build configuration list for PBXProject "CoreDataCoursera" */;
+			buildConfigurationList = 1F121A4C221308E8001AEC93 /* Build configuration list for PBXProject "CoreDataCoursera" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,62 +146,62 @@
 				en,
 				Base,
 			);
-			mainGroup = 1FD2005422117BB4007BDC46;
-			productRefGroup = 1FD2005E22117BB4007BDC46 /* Products */;
+			mainGroup = 1F121A48221308E8001AEC93;
+			productRefGroup = 1F121A52221308E8001AEC93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1FD2005C22117BB4007BDC46 /* CoreDataCoursera */,
+				1F121A50221308E8001AEC93 /* CoreDataCoursera */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1FD2005B22117BB4007BDC46 /* Resources */ = {
+		1F121A4F221308E8001AEC93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD2007022117BB5007BDC46 /* LaunchScreen.storyboard in Resources */,
-				1FD2006D22117BB5007BDC46 /* Assets.xcassets in Resources */,
-				1FD2006822117BB4007BDC46 /* Main.storyboard in Resources */,
+				1F121A64221308E8001AEC93 /* LaunchScreen.storyboard in Resources */,
+				1F121A61221308E8001AEC93 /* Assets.xcassets in Resources */,
+				1F121A5C221308E8001AEC93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1FD2005922117BB4007BDC46 /* Sources */ = {
+		1F121A4D221308E8001AEC93 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD2006522117BB4007BDC46 /* ViewController.m in Sources */,
-				1FD2006222117BB4007BDC46 /* AppDelegate.m in Sources */,
-				1FD2008A22119D1E007BDC46 /* PersonMO+CoreDataProperties.m in Sources */,
-				1FD2008622119D1E007BDC46 /* ChoreLogMO+CoreDataProperties.m in Sources */,
-				1FD2008922119D1E007BDC46 /* PersonMO+CoreDataClass.m in Sources */,
-				1FD2007322117BB5007BDC46 /* main.m in Sources */,
-				1FD2008722119D1E007BDC46 /* ChoreMO+CoreDataClass.m in Sources */,
-				1FD2006B22117BB4007BDC46 /* CoreDataCoursera.xcdatamodeld in Sources */,
-				1FD2008522119D1E007BDC46 /* ChoreLogMO+CoreDataClass.m in Sources */,
-				1FD2008822119D1E007BDC46 /* ChoreMO+CoreDataProperties.m in Sources */,
+				1F121A9E22130CE1001AEC93 /* PersonMO+CoreDataProperties.m in Sources */,
+				1F121A59221308E8001AEC93 /* ViewController.m in Sources */,
+				1F121A9F22130CE1001AEC93 /* ChoreLogMO+CoreDataClass.m in Sources */,
+				1F121A56221308E8001AEC93 /* AppDelegate.m in Sources */,
+				1F121AA022130CE1001AEC93 /* ChoreLogMO+CoreDataProperties.m in Sources */,
+				1F121AA122130CE1001AEC93 /* ChoreMO+CoreDataClass.m in Sources */,
+				1F121A67221308E8001AEC93 /* main.m in Sources */,
+				1F121A9D22130CE1001AEC93 /* PersonMO+CoreDataClass.m in Sources */,
+				1F121A5F221308E8001AEC93 /* CoreDataCoursera.xcdatamodeld in Sources */,
+				1F121AA222130CE1001AEC93 /* ChoreMO+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1FD2006622117BB4007BDC46 /* Main.storyboard */ = {
+		1F121A5A221308E8001AEC93 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1FD2006722117BB4007BDC46 /* Base */,
+				1F121A5B221308E8001AEC93 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1FD2006E22117BB5007BDC46 /* LaunchScreen.storyboard */ = {
+		1F121A62221308E8001AEC93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1FD2006F22117BB5007BDC46 /* Base */,
+				1F121A63221308E8001AEC93 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1FD2007422117BB5007BDC46 /* Debug */ = {
+		1F121A68221308E8001AEC93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +268,7 @@
 			};
 			name = Debug;
 		};
-		1FD2007522117BB5007BDC46 /* Release */ = {
+		1F121A69221308E8001AEC93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -321,7 +321,7 @@
 			};
 			name = Release;
 		};
-		1FD2007722117BB5007BDC46 /* Debug */ = {
+		1F121A6B221308E8001AEC93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -338,7 +338,7 @@
 			};
 			name = Debug;
 		};
-		1FD2007822117BB5007BDC46 /* Release */ = {
+		1F121A6C221308E8001AEC93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -358,20 +358,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FD2005822117BB4007BDC46 /* Build configuration list for PBXProject "CoreDataCoursera" */ = {
+		1F121A4C221308E8001AEC93 /* Build configuration list for PBXProject "CoreDataCoursera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FD2007422117BB5007BDC46 /* Debug */,
-				1FD2007522117BB5007BDC46 /* Release */,
+				1F121A68221308E8001AEC93 /* Debug */,
+				1F121A69221308E8001AEC93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FD2007622117BB5007BDC46 /* Build configuration list for PBXNativeTarget "CoreDataCoursera" */ = {
+		1F121A6A221308E8001AEC93 /* Build configuration list for PBXNativeTarget "CoreDataCoursera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FD2007722117BB5007BDC46 /* Debug */,
-				1FD2007822117BB5007BDC46 /* Release */,
+				1F121A6B221308E8001AEC93 /* Debug */,
+				1F121A6C221308E8001AEC93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -379,17 +379,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1FD2006922117BB4007BDC46 /* CoreDataCoursera.xcdatamodeld */ = {
+		1F121A5D221308E8001AEC93 /* CoreDataCoursera.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1FD2006A22117BB4007BDC46 /* CoreDataCoursera.xcdatamodel */,
+				1F121A5E221308E8001AEC93 /* CoreDataCoursera.xcdatamodel */,
 			);
-			currentVersion = 1FD2006A22117BB4007BDC46 /* CoreDataCoursera.xcdatamodel */;
+			currentVersion = 1F121A5E221308E8001AEC93 /* CoreDataCoursera.xcdatamodel */;
 			path = CoreDataCoursera.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 1FD2005522117BB4007BDC46 /* Project object */;
+	rootObject = 1F121A49221308E8001AEC93 /* Project object */;
 }
