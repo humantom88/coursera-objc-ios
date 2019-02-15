@@ -18,50 +18,120 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQM-49-3ib">
-                                <rect key="frame" x="16" y="517" width="343" height="130"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Amh-Tz-N8S">
-                                <rect key="frame" x="16" y="20" width="169" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="zlR-ac-F6e"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5S-eL-nEk">
+                                <rect key="frame" x="16" y="58" width="163.5" height="30"/>
+                                <state key="normal" title="Add a Chore"/>
+                                <connections>
+                                    <action selector="choreTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vqu-pt-OD5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYr-nP-dpD">
+                                <rect key="frame" x="16" y="20" width="163.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zq-cQ-CvT">
-                                <rect key="frame" x="16" y="58" width="169" height="30"/>
-                                <state key="normal" title="Add a Chore"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Persisted Data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qty-Mo-Y4u">
+                                <rect key="frame" x="16" y="547" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jrr-0D-Txg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpW-me-KpG">
+                                <rect key="frame" x="165" y="481" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
                                 <connections>
-                                    <action selector="addChoreTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ed-bg-juI"/>
+                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHj-bQ-e5v"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZh-C0-Lub">
+                                <rect key="frame" x="16" y="96" width="163.5" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="8ej-3a-bA1"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DTw-Ww-rmm">
+                                <rect key="frame" x="195.5" y="20" width="163.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e31-kB-Uxq">
+                                <rect key="frame" x="195.5" y="58" width="163.5" height="30"/>
+                                <state key="normal" title="Add a Person"/>
+                                <connections>
+                                    <action selector="personTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3sJ-eQ-U2R"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUL-EQ-mJf">
+                                <rect key="frame" x="195.5" y="96" width="163.5" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="FtC-gd-DXf"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2w-fg-HX5">
+                                <rect key="frame" x="126.5" y="443" width="122" height="30"/>
+                                <state key="normal" title="ChoreLog Tapped"/>
+                                <connections>
+                                    <action selector="choreLogTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ex2-Si-RRX"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XyI-vf-EM0">
+                                <rect key="frame" x="0.0" y="194" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="571929599.57197201">
+                                    <!--2019-02-15 13:19:59 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Zq-cQ-CvT" firstAttribute="trailing" secondItem="Amh-Tz-N8S" secondAttribute="trailing" id="0HZ-Uv-heq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pQM-49-3ib" secondAttribute="bottom" constant="20" id="5vT-C0-yRa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pQM-49-3ib" secondAttribute="trailing" constant="16" id="IGm-Cv-xCG"/>
-                            <constraint firstItem="9Zq-cQ-CvT" firstAttribute="top" secondItem="Amh-Tz-N8S" secondAttribute="bottom" constant="8" id="V0r-GU-nX2"/>
-                            <constraint firstItem="pQM-49-3ib" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dKf-GX-5Q9"/>
-                            <constraint firstItem="Amh-Tz-N8S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f3d-KE-YHh"/>
-                            <constraint firstItem="Amh-Tz-N8S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gSF-NL-bsb"/>
-                            <constraint firstItem="9Zq-cQ-CvT" firstAttribute="leading" secondItem="Amh-Tz-N8S" secondAttribute="leading" id="od9-1g-HLe"/>
+                            <constraint firstItem="iZh-C0-Lub" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0al-Y0-7XS"/>
+                            <constraint firstItem="XyI-vf-EM0" firstAttribute="top" secondItem="iZh-C0-Lub" secondAttribute="bottom" constant="8" id="47Y-zX-ZRf"/>
+                            <constraint firstItem="iZh-C0-Lub" firstAttribute="top" secondItem="Z5S-eL-nEk" secondAttribute="bottom" constant="8" id="4Yr-pN-FRd"/>
+                            <constraint firstItem="FpW-me-KpG" firstAttribute="top" secondItem="n2w-fg-HX5" secondAttribute="bottom" constant="8" id="5p4-Dc-Uhd"/>
+                            <constraint firstItem="DTw-Ww-rmm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8N7-Pg-kud"/>
+                            <constraint firstItem="DTw-Ww-rmm" firstAttribute="leading" secondItem="sYr-nP-dpD" secondAttribute="trailing" constant="16" id="8NZ-FI-7y3"/>
+                            <constraint firstItem="qty-Mo-Y4u" firstAttribute="top" secondItem="FpW-me-KpG" secondAttribute="bottom" constant="36" id="9Va-Hx-B9o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DTw-Ww-rmm" secondAttribute="trailing" constant="16" id="GCT-gf-OdS"/>
+                            <constraint firstItem="OUL-EQ-mJf" firstAttribute="top" secondItem="e31-kB-Uxq" secondAttribute="bottom" constant="8" id="Hu4-Kl-JeN"/>
+                            <constraint firstItem="e31-kB-Uxq" firstAttribute="leading" secondItem="Z5S-eL-nEk" secondAttribute="trailing" constant="16" id="JQB-Hp-PEf"/>
+                            <constraint firstItem="FpW-me-KpG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kgt-I1-cjK"/>
+                            <constraint firstItem="e31-kB-Uxq" firstAttribute="top" secondItem="DTw-Ww-rmm" secondAttribute="bottom" constant="8" id="SC3-nQ-GkI"/>
+                            <constraint firstItem="n2w-fg-HX5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V1u-oP-Awx"/>
+                            <constraint firstItem="XyI-vf-EM0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WmM-Kb-ysP"/>
+                            <constraint firstItem="sYr-nP-dpD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xyn-iz-j1c"/>
+                            <constraint firstItem="XyI-vf-EM0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bCV-py-JnI"/>
+                            <constraint firstAttribute="trailing" secondItem="OUL-EQ-mJf" secondAttribute="trailing" constant="16" id="f86-dB-tfu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qty-Mo-Y4u" secondAttribute="bottom" constant="20" id="gV0-kA-Tm2"/>
+                            <constraint firstItem="sYr-nP-dpD" firstAttribute="width" secondItem="DTw-Ww-rmm" secondAttribute="width" id="kxn-nS-I3l"/>
+                            <constraint firstItem="Z5S-eL-nEk" firstAttribute="centerX" secondItem="sYr-nP-dpD" secondAttribute="centerX" id="oPv-xL-c9h"/>
+                            <constraint firstItem="Z5S-eL-nEk" firstAttribute="width" secondItem="e31-kB-Uxq" secondAttribute="width" id="qfC-tV-wed"/>
+                            <constraint firstItem="sYr-nP-dpD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="r16-o7-ZMk"/>
+                            <constraint firstItem="qty-Mo-Y4u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="t97-jL-Ku0"/>
+                            <constraint firstItem="XyI-vf-EM0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="udo-wn-JeC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qty-Mo-Y4u" secondAttribute="trailing" constant="16" id="vIF-Es-APa"/>
+                            <constraint firstItem="Z5S-eL-nEk" firstAttribute="top" secondItem="sYr-nP-dpD" secondAttribute="bottom" constant="8" id="vUg-z2-2QN"/>
+                            <constraint firstItem="OUL-EQ-mJf" firstAttribute="width" secondItem="iZh-C0-Lub" secondAttribute="width" id="vcD-TG-pcw"/>
+                            <constraint firstItem="e31-kB-Uxq" firstAttribute="centerX" secondItem="DTw-Ww-rmm" secondAttribute="centerX" id="w35-Pn-OO5"/>
+                            <constraint firstItem="OUL-EQ-mJf" firstAttribute="leading" secondItem="iZh-C0-Lub" secondAttribute="trailing" constant="16" id="yxg-RW-a0c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="choreLogLabel" destination="pQM-49-3ib" id="04x-XQ-DhL"/>
-                        <outlet property="choreText" destination="Amh-Tz-N8S" id="jRY-he-OMS"/>
+                        <outlet property="choreField" destination="sYr-nP-dpD" id="8FE-m0-hfA"/>
+                        <outlet property="choreRoller" destination="iZh-C0-Lub" id="opb-dh-Jdl"/>
+                        <outlet property="datePicker" destination="XyI-vf-EM0" id="F19-5V-pkR"/>
+                        <outlet property="persistedData" destination="qty-Mo-Y4u" id="FO9-Bv-fEm"/>
+                        <outlet property="personField" destination="DTw-Ww-rmm" id="7mN-JZ-T71"/>
+                        <outlet property="personRoller" destination="OUL-EQ-mJf" id="RYf-V6-WQu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="132.68365817091455"/>
+            <point key="canvasLocation" x="52" y="78.710644677661179"/>
         </scene>
     </scenes>
 </document>

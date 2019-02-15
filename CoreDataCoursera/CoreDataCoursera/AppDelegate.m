@@ -2,14 +2,11 @@
 //  AppDelegate.m
 //  CoreDataCoursera
 //
-//  Created by Tom Belov on 12.02.2019.
+//  Created by Tom Belov on 15/02/2019.
 //  Copyright © 2019 Tom Belov. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ChoreMO+CoreDataClass.h"
-#import "ChoreLogMO+CoreDataClass.h"
-#import "PersonMO+CoreDataClass.h"
 
 @interface AppDelegate ()
 
@@ -52,30 +49,29 @@
     [self saveContext];
 }
 
-#pragma mark - My Model Object Methods
+#pragma mark - My Object Model Functions
+- (ChoreMO *)createChoreMO {
+    NSManagedObjectContext *moc = self.persistentContainer.viewContext;
 
-- (PersonMO *) createPersonMO {
-    NSManagedObjectContext *moc = [self.persistentContainer newBackgroundContext];
-    
-    PersonMO *personMO = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:moc];
-    
-    return personMO;
-}
-
-- (ChoreMO *) createChoreMO {
-    NSManagedObjectContext *moc = [self.persistentContainer newBackgroundContext];
-    
-    ChoreMO *choreMO = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:moc];
+    ChoreMO *choreMO = (ChoreMO *) [NSEntityDescription insertNewObjectForEntityForName:@"Chore" inManagedObjectContext:moc];
     
     return choreMO;
 }
 
 - (ChoreLogMO *) createChoreLogMO {
-    NSManagedObjectContext *moc = [self.persistentContainer newBackgroundContext];
+    NSManagedObjectContext *moc = self.persistentContainer.viewContext;
     
-    ChoreLogMO *choreLogMO = [NSEntityDescription insertNewObjectForEntityForName:@"ChoreLog" inManagedObjectContext:moc];
+    ChoreLogMO *choreLogMO = (ChoreLogMO *) [NSEntityDescription insertNewObjectForEntityForName:@"ChoreLog" inManagedObjectContext:moc];
     
     return choreLogMO;
+}
+
+- (PersonMO *)createPersonMO {
+    NSManagedObjectContext *moc = self.persistentContainer.viewContext;
+    
+    PersonMO *personMO = (PersonMO *) [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:moc];
+    
+    return personMO;
 }
 
 #pragma mark - Core Data stack

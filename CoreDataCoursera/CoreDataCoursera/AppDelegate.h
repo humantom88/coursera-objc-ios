@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  CoreDataCoursera
 //
-//  Created by Tom Belov on 12.02.2019.
+//  Created by Tom Belov on 15/02/2019.
 //  Copyright © 2019 Tom Belov. All rights reserved.
 //
 
@@ -19,6 +19,7 @@
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
 - (void)saveContext;
+
 - (ChoreMO *) createChoreMO;
 - (ChoreLogMO *) createChoreLogMO;
 - (PersonMO *) createPersonMO;
