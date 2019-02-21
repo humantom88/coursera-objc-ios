@@ -69,10 +69,10 @@
     
     NSInteger personRow = [self.personRoller selectedRowInComponent:0];
     
-    ChoreMO *choreMO = (ChoreMO *) [self.choreRollerHelper getItemFromArray:choreRow];
-    PersonMO *personMO = (PersonMO *) [self.choreRollerHelper getItemFromArray:personRow];
+    ChoreMO* choreMO = (ChoreMO *) [self.choreRollerHelper getItemFromArray:choreRow];
+    PersonMO* personMO = (PersonMO *) [self.choreRollerHelper getItemFromArray:personRow];
     
-    ChoreLogMO *choreLogMO = (ChoreLogMO *) [self.appDelegate createChoreMO];
+    ChoreLogMO* choreLogMO = (ChoreLogMO *) [self.appDelegate createChoreMO];
     
     choreLogMO.chore_done = choreMO;
     choreLogMO.person_who_did_it = personMO;
