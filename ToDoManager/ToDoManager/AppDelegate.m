@@ -1,13 +1,12 @@
 //
 //  AppDelegate.m
-//  tableViewPlusCD
+//  ToDoManager
 //
 //  Created by Tom Belov on 21/02/2019.
 //  Copyright © 2019 Tom Belov. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ViewController *rootVC = (ViewController *) self.window.rootViewController;
-    rootVC.myContext = self.persistentContainer.viewContext;
-    
+    // Override point for customization after application launch.
     return YES;
 }
 
@@ -61,7 +58,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"tableViewPlusCD"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"ToDoManager"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.

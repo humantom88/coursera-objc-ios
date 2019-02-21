@@ -14,6 +14,9 @@
 		1F03D9BD221E9C3300B4F71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F03D9BC221E9C3300B4F71A /* Assets.xcassets */; };
 		1F03D9C0221E9C3300B4F71A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F03D9BE221E9C3300B4F71A /* LaunchScreen.storyboard */; };
 		1F03D9C3221E9C3300B4F71A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D9C2221E9C3300B4F71A /* main.m */; };
+		1F03D9D9221EA03700B4F71A /* ToDoEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D9D7221EA03700B4F71A /* ToDoEntity+CoreDataClass.m */; };
+		1F03D9DA221EA03700B4F71A /* ToDoEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D9D8221EA03700B4F71A /* ToDoEntity+CoreDataProperties.m */; };
+		1F03D9E3221EA20D00B4F71A /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03D9E2221EA20D00B4F71A /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		1F03D9BF221E9C3300B4F71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F03D9C1221E9C3300B4F71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F03D9C2221E9C3300B4F71A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F03D9D5221EA03700B4F71A /* ToDoEntity+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F03D9D6221EA03700B4F71A /* ToDoEntity+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		1F03D9D7221EA03700B4F71A /* ToDoEntity+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ToDoEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		1F03D9D8221EA03700B4F71A /* ToDoEntity+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ToDoEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F03D9E1221EA20D00B4F71A /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		1F03D9E2221EA20D00B4F71A /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,10 @@
 		1F03D9A4221E9C3200B4F71A = {
 			isa = PBXGroup;
 			children = (
+				1F03D9D5221EA03700B4F71A /* ToDoEntity+CoreDataProperties.h */,
+				1F03D9D6221EA03700B4F71A /* ToDoEntity+CoreDataClass.h */,
+				1F03D9D7221EA03700B4F71A /* ToDoEntity+CoreDataClass.m */,
+				1F03D9D8221EA03700B4F71A /* ToDoEntity+CoreDataProperties.m */,
 				1F03D9AF221E9C3200B4F71A /* tableViewPlusCD */,
 				1F03D9AE221E9C3200B4F71A /* Products */,
 			);
@@ -60,6 +73,8 @@
 		1F03D9AF221E9C3200B4F71A /* tableViewPlusCD */ = {
 			isa = PBXGroup;
 			children = (
+				1F03D9E1221EA20D00B4F71A /* TableViewCell.h */,
+				1F03D9E2221EA20D00B4F71A /* TableViewCell.m */,
 				1F03D9B0221E9C3200B4F71A /* AppDelegate.h */,
 				1F03D9B1221E9C3200B4F71A /* AppDelegate.m */,
 				1F03D9B3221E9C3200B4F71A /* ViewController.h */,
@@ -144,9 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F03D9E3221EA20D00B4F71A /* TableViewCell.m in Sources */,
 				1F03D9BB221E9C3200B4F71A /* tableViewPlusCD.xcdatamodeld in Sources */,
 				1F03D9B5221E9C3200B4F71A /* ViewController.m in Sources */,
+				1F03D9D9221EA03700B4F71A /* ToDoEntity+CoreDataClass.m in Sources */,
 				1F03D9C3221E9C3300B4F71A /* main.m in Sources */,
+				1F03D9DA221EA03700B4F71A /* ToDoEntity+CoreDataProperties.m in Sources */,
 				1F03D9B2221E9C3200B4F71A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

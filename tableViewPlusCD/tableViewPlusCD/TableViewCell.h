@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToDoEntity+CoreDataClass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UILabel *cellTitle;
+
+- (void) setTitle:(ToDoEntity *)incoming;
 
 @end
 

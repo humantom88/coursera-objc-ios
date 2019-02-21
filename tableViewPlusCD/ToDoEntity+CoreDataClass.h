@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDoEntity : NSManagedObject
 
+- (void) setTitle:(ToDoEntity *)incoming;
+
 @end
 
 NS_ASSUME_NONNULL_END

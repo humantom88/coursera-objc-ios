@@ -7,6 +7,7 @@
 //
 
 #import "TableViewCell.h"
+#import "ToDoEntity+CoreDataClass.h"
 
 @implementation TableViewCell
 
@@ -17,8 +18,11 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+}
     // Configure the view for the selected state
+- (void) setTitle:(ToDoEntity *)incoming {
+    self.cellTitle.text = incoming.title;
+    
 }
 
 @end
