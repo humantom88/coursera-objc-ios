@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPHandlesMOC.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyUINavigationController : UINavigationController
+@interface MyUINavigationController : UINavigationController <DPHandlesMOC>
 
 @end
 

@@ -16,6 +16,9 @@
 		1F03DA0B221EE2B600B4F71A /* MyUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA0A221EE2B600B4F71A /* MyUINavigationController.m */; };
 		1F03DA0E221EE30E00B4F71A /* MyUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA0D221EE30E00B4F71A /* MyUITableViewController.m */; };
 		1F03DA11221EE36900B4F71A /* MyUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA10221EE36900B4F71A /* MyUIViewController.m */; };
+		1F03DA18221FC1FB00B4F71A /* ToDoEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA16221FC1FB00B4F71A /* ToDoEntity+CoreDataClass.m */; };
+		1F03DA19221FC1FB00B4F71A /* ToDoEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA17221FC1FB00B4F71A /* ToDoEntity+CoreDataProperties.m */; };
+		1F03DA1C221FC29D00B4F71A /* MyUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA1B221FC29D00B4F71A /* MyUITableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,12 @@
 		1F03DA10221EE36900B4F71A /* MyUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUIViewController.m; sourceTree = "<group>"; };
 		1F03DA12221EE3EB00B4F71A /* DPHandlesMOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHandlesMOC.h; sourceTree = "<group>"; };
 		1F03DA13221EE43F00B4F71A /* DPHandlesToDoEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHandlesToDoEntity.h; sourceTree = "<group>"; };
+		1F03DA14221FC1FB00B4F71A /* ToDoEntity+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F03DA15221FC1FB00B4F71A /* ToDoEntity+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		1F03DA16221FC1FB00B4F71A /* ToDoEntity+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ToDoEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		1F03DA17221FC1FB00B4F71A /* ToDoEntity+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ToDoEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F03DA1A221FC29D00B4F71A /* MyUITableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyUITableViewCell.h; sourceTree = "<group>"; };
+		1F03DA1B221FC29D00B4F71A /* MyUITableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyUITableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,10 @@
 		1F03D9E4221EE19B00B4F71A = {
 			isa = PBXGroup;
 			children = (
+				1F03DA14221FC1FB00B4F71A /* ToDoEntity+CoreDataProperties.h */,
+				1F03DA15221FC1FB00B4F71A /* ToDoEntity+CoreDataClass.h */,
+				1F03DA16221FC1FB00B4F71A /* ToDoEntity+CoreDataClass.m */,
+				1F03DA17221FC1FB00B4F71A /* ToDoEntity+CoreDataProperties.m */,
 				1F03D9EF221EE19B00B4F71A /* ToDoManager */,
 				1F03D9EE221EE19B00B4F71A /* Products */,
 			);
@@ -75,6 +88,8 @@
 				1F03D9F6221EE19B00B4F71A /* Main.storyboard */,
 				1F03DA09221EE2B600B4F71A /* MyUINavigationController.h */,
 				1F03DA0A221EE2B600B4F71A /* MyUINavigationController.m */,
+				1F03DA1A221FC29D00B4F71A /* MyUITableViewCell.h */,
+				1F03DA1B221FC29D00B4F71A /* MyUITableViewCell.m */,
 				1F03DA0C221EE30E00B4F71A /* MyUITableViewController.h */,
 				1F03DA0D221EE30E00B4F71A /* MyUITableViewController.m */,
 				1F03DA0F221EE36900B4F71A /* MyUIViewController.h */,
@@ -158,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F03DA19221FC1FB00B4F71A /* ToDoEntity+CoreDataProperties.m in Sources */,
 				1F03D9F2221EE19B00B4F71A /* AppDelegate.m in Sources */,
+				1F03DA1C221FC29D00B4F71A /* MyUITableViewCell.m in Sources */,
 				1F03DA03221EE19C00B4F71A /* main.m in Sources */,
+				1F03DA18221FC1FB00B4F71A /* ToDoEntity+CoreDataClass.m in Sources */,
 				1F03DA11221EE36900B4F71A /* MyUIViewController.m in Sources */,
 				1F03DA0E221EE30E00B4F71A /* MyUITableViewController.m in Sources */,
 				1F03D9FB221EE19B00B4F71A /* ToDoManager.xcdatamodeld in Sources */,

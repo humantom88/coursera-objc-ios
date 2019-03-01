@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPHandlesMOC <NSObject>
 
-- (void) receiveMOC:(NSManageObjectContext *)incomingMOC;
+- (void) receiveMOC:(NSManagedObjectContext *)incomingMOC;
 
 @end
 

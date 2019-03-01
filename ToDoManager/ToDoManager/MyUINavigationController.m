@@ -10,6 +10,8 @@
 
 @interface MyUINavigationController ()
 
+@property (strong, nonatomic) NSManagedObjectContext* managedObjectContext;
+
 @end
 
 @implementation MyUINavigationController
@@ -28,5 +30,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) receiveMOC:(NSManagedObjectContext *)incomingMOC {
+    self.managedObjectContext = incomingMOC;
+    id<DPHandlesMOC> child = (id<DPHandlesMOC>) self.viewControllers[0];
+    [child receiveMOC:self.managedObjectContext];
+}
 
 @end
