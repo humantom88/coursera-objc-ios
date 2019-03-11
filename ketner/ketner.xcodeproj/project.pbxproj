@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F41BAFA2236482000DBECFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BAF92236482000DBECFC /* AppDelegate.m */; };
+		1F41BAFD2236482000DBECFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BAFC2236482000DBECFC /* ViewController.m */; };
+		1F41BB002236482000DBECFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41BAFE2236482000DBECFC /* Main.storyboard */; };
+		1F41BB032236482000DBECFC /* ketner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB012236482000DBECFC /* ketner.xcdatamodeld */; };
+		1F41BB052236482100DBECFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F41BB042236482100DBECFC /* Assets.xcassets */; };
+		1F41BB082236482100DBECFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41BB062236482100DBECFC /* LaunchScreen.storyboard */; };
+		1F41BB0B2236482100DBECFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB0A2236482100DBECFC /* main.m */; };
+		1F41BB152236482200DBECFC /* ketnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB142236482200DBECFC /* ketnerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F41BB112236482200DBECFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F41BAED2236482000DBECFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F41BAF42236482000DBECFC;
+			remoteInfo = ketner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F41BAF52236482000DBECFC /* ketner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ketner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F41BAF82236482000DBECFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F41BAF92236482000DBECFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F41BAFB2236482000DBECFC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F41BAFC2236482000DBECFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F41BAFF2236482000DBECFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F41BB022236482000DBECFC /* ketner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ketner.xcdatamodel; sourceTree = "<group>"; };
+		1F41BB042236482100DBECFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F41BB072236482100DBECFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F41BB092236482100DBECFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F41BB0A2236482100DBECFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F41BB102236482200DBECFC /* ketnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ketnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F41BB142236482200DBECFC /* ketnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ketnerTests.m; sourceTree = "<group>"; };
+		1F41BB162236482200DBECFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F41BAF22236482000DBECFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F41BB0D2236482200DBECFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F41BAEC2236482000DBECFC = {
+			isa = PBXGroup;
+			children = (
+				1F41BAF72236482000DBECFC /* ketner */,
+				1F41BB132236482200DBECFC /* ketnerTests */,
+				1F41BAF62236482000DBECFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F41BAF62236482000DBECFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BAF52236482000DBECFC /* ketner.app */,
+				1F41BB102236482200DBECFC /* ketnerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F41BAF72236482000DBECFC /* ketner */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BAF82236482000DBECFC /* AppDelegate.h */,
+				1F41BAF92236482000DBECFC /* AppDelegate.m */,
+				1F41BAFB2236482000DBECFC /* ViewController.h */,
+				1F41BAFC2236482000DBECFC /* ViewController.m */,
+				1F41BAFE2236482000DBECFC /* Main.storyboard */,
+				1F41BB042236482100DBECFC /* Assets.xcassets */,
+				1F41BB062236482100DBECFC /* LaunchScreen.storyboard */,
+				1F41BB092236482100DBECFC /* Info.plist */,
+				1F41BB0A2236482100DBECFC /* main.m */,
+				1F41BB012236482000DBECFC /* ketner.xcdatamodeld */,
+			);
+			path = ketner;
+			sourceTree = "<group>";
+		};
+		1F41BB132236482200DBECFC /* ketnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB142236482200DBECFC /* ketnerTests.m */,
+				1F41BB162236482200DBECFC /* Info.plist */,
+			);
+			path = ketnerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F41BAF42236482000DBECFC /* ketner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F41BB192236482200DBECFC /* Build configuration list for PBXNativeTarget "ketner" */;
+			buildPhases = (
+				1F41BAF12236482000DBECFC /* Sources */,
+				1F41BAF22236482000DBECFC /* Frameworks */,
+				1F41BAF32236482000DBECFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ketner;
+			productName = ketner;
+			productReference = 1F41BAF52236482000DBECFC /* ketner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F41BB0F2236482200DBECFC /* ketnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F41BB1C2236482200DBECFC /* Build configuration list for PBXNativeTarget "ketnerTests" */;
+			buildPhases = (
+				1F41BB0C2236482200DBECFC /* Sources */,
+				1F41BB0D2236482200DBECFC /* Frameworks */,
+				1F41BB0E2236482200DBECFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F41BB122236482200DBECFC /* PBXTargetDependency */,
+			);
+			name = ketnerTests;
+			productName = ketnerTests;
+			productReference = 1F41BB102236482200DBECFC /* ketnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F41BAED2236482000DBECFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tom Belov";
+				TargetAttributes = {
+					1F41BAF42236482000DBECFC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1F41BB0F2236482200DBECFC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1F41BAF42236482000DBECFC;
+					};
+				};
+			};
+			buildConfigurationList = 1F41BAF02236482000DBECFC /* Build configuration list for PBXProject "ketner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F41BAEC2236482000DBECFC;
+			productRefGroup = 1F41BAF62236482000DBECFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F41BAF42236482000DBECFC /* ketner */,
+				1F41BB0F2236482200DBECFC /* ketnerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F41BAF32236482000DBECFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F41BB082236482100DBECFC /* LaunchScreen.storyboard in Resources */,
+				1F41BB052236482100DBECFC /* Assets.xcassets in Resources */,
+				1F41BB002236482000DBECFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F41BB0E2236482200DBECFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F41BAF12236482000DBECFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F41BAFD2236482000DBECFC /* ViewController.m in Sources */,
+				1F41BB032236482000DBECFC /* ketner.xcdatamodeld in Sources */,
+				1F41BB0B2236482100DBECFC /* main.m in Sources */,
+				1F41BAFA2236482000DBECFC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F41BB0C2236482200DBECFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F41BB152236482200DBECFC /* ketnerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F41BB122236482200DBECFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F41BAF42236482000DBECFC /* ketner */;
+			targetProxy = 1F41BB112236482200DBECFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F41BAFE2236482000DBECFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F41BAFF2236482000DBECFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F41BB062236482100DBECFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F41BB072236482100DBECFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F41BB172236482200DBECFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F41BB182236482200DBECFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F41BB1A2236482200DBECFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
+				INFOPLIST_FILE = ketner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tombelov.ketner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F41BB1B2236482200DBECFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
+				INFOPLIST_FILE = ketner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tombelov.ketner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F41BB1D2236482200DBECFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
+				INFOPLIST_FILE = ketnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tombelov.ketnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ketner.app/ketner";
+			};
+			name = Debug;
+		};
+		1F41BB1E2236482200DBECFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
+				INFOPLIST_FILE = ketnerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tombelov.ketnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ketner.app/ketner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F41BAF02236482000DBECFC /* Build configuration list for PBXProject "ketner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F41BB172236482200DBECFC /* Debug */,
+				1F41BB182236482200DBECFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F41BB192236482200DBECFC /* Build configuration list for PBXNativeTarget "ketner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F41BB1A2236482200DBECFC /* Debug */,
+				1F41BB1B2236482200DBECFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F41BB1C2236482200DBECFC /* Build configuration list for PBXNativeTarget "ketnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F41BB1D2236482200DBECFC /* Debug */,
+				1F41BB1E2236482200DBECFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F41BB012236482000DBECFC /* ketner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F41BB022236482000DBECFC /* ketner.xcdatamodel */,
+			);
+			currentVersion = 1F41BB022236482000DBECFC /* ketner.xcdatamodel */;
+			path = ketner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1F41BAED2236482000DBECFC /* Project object */;
+}

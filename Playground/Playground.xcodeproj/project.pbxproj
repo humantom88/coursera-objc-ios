@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1F0D41E02226B1FD00B81438 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D41DF2226B1FD00B81438 /* AppDelegate.m */; };
-		1F0D41E32226B1FD00B81438 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D41E22226B1FD00B81438 /* ViewController.m */; };
 		1F0D41E62226B1FD00B81438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D41E42226B1FD00B81438 /* Main.storyboard */; };
 		1F0D41E92226B1FD00B81438 /* Playground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D41E72226B1FD00B81438 /* Playground.xcdatamodeld */; };
 		1F0D41EB2226B1FE00B81438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D41EA2226B1FE00B81438 /* Assets.xcassets */; };
 		1F0D41EE2226B1FE00B81438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D41EC2226B1FE00B81438 /* LaunchScreen.storyboard */; };
 		1F0D41F12226B1FE00B81438 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D41F02226B1FE00B81438 /* main.m */; };
-		1F0F03782227EF350071F11E /* Stuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F03772227EF350071F11E /* Stuff.m */; };
-		1F0F037B2229144C0071F11E /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F037A2229144C0071F11E /* Foo.m */; };
 		1F0F038822295A880071F11E /* PlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F038722295A880071F11E /* PlaygroundTests.m */; };
+		1F41BB212236615600DBECFC /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB202236615600DBECFC /* SplashViewController.m */; };
+		1F41BB242236616C00DBECFC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB232236616C00DBECFC /* HomeViewController.m */; };
+		1F41BB272236622400DBECFC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB262236622400DBECFC /* LoginViewController.m */; };
+		1F41BB2A2236623900DBECFC /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB292236623900DBECFC /* SignupViewController.m */; };
+		1F41BB3022366C6100DBECFC /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB2F22366C6100DBECFC /* CoreDataManager.m */; };
+		1F41BB33223675D200DBECFC /* CoreDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB32223675D200DBECFC /* CoreDataEngine.m */; };
+		1F41BB4822367DB000DBECFC /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB4722367DB000DBECFC /* UserModel.m */; };
+		1F41BB4B223698B600DBECFC /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB4A223698B600DBECFC /* DataStore.m */; };
+		1F41BB622236A72E00DBECFC /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB602236A72E00DBECFC /* User+CoreDataClass.m */; };
+		1F41BB632236A72E00DBECFC /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB612236A72E00DBECFC /* User+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,21 +40,35 @@
 		1F0D41DB2226B1FD00B81438 /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0D41DE2226B1FD00B81438 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F0D41DF2226B1FD00B81438 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F0D41E12226B1FD00B81438 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F0D41E22226B1FD00B81438 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1F0D41E52226B1FD00B81438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F0D41E82226B1FD00B81438 /* Playground.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Playground.xcdatamodel; sourceTree = "<group>"; };
 		1F0D41EA2226B1FE00B81438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F0D41ED2226B1FE00B81438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F0D41EF2226B1FE00B81438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F0D41F02226B1FE00B81438 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1F0F03762227EF350071F11E /* Stuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stuff.h; sourceTree = "<group>"; };
-		1F0F03772227EF350071F11E /* Stuff.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stuff.m; sourceTree = "<group>"; };
-		1F0F03792229144C0071F11E /* Foo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
-		1F0F037A2229144C0071F11E /* Foo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
 		1F0F038522295A880071F11E /* PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0F038722295A880071F11E /* PlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaygroundTests.m; sourceTree = "<group>"; };
 		1F0F038922295A880071F11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F41BB1F2236615600DBECFC /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		1F41BB202236615600DBECFC /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		1F41BB222236616C00DBECFC /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1F41BB232236616C00DBECFC /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		1F41BB252236622400DBECFC /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1F41BB262236622400DBECFC /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1F41BB282236623900DBECFC /* SignupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		1F41BB292236623900DBECFC /* SignupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		1F41BB2E22366C6100DBECFC /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		1F41BB2F22366C6100DBECFC /* CoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		1F41BB31223675D200DBECFC /* CoreDataEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataEngine.h; sourceTree = "<group>"; };
+		1F41BB32223675D200DBECFC /* CoreDataEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataEngine.m; sourceTree = "<group>"; };
+		1F41BB4622367DB000DBECFC /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		1F41BB4722367DB000DBECFC /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		1F41BB49223698B600DBECFC /* DataStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		1F41BB4A223698B600DBECFC /* DataStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
+		1F41BB5E2236A72E00DBECFC /* User+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F41BB5F2236A72E00DBECFC /* User+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
+		1F41BB602236A72E00DBECFC /* User+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
+		1F41BB612236A72E00DBECFC /* User+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +92,10 @@
 		1F0D41D22226B1FD00B81438 = {
 			isa = PBXGroup;
 			children = (
+				1F41BB5E2236A72E00DBECFC /* User+CoreDataProperties.h */,
+				1F41BB5F2236A72E00DBECFC /* User+CoreDataClass.h */,
+				1F41BB602236A72E00DBECFC /* User+CoreDataClass.m */,
+				1F41BB612236A72E00DBECFC /* User+CoreDataProperties.m */,
 				1F0D41DD2226B1FD00B81438 /* Playground */,
 				1F0F038622295A880071F11E /* PlaygroundTests */,
 				1F0D41DC2226B1FD00B81438 /* Products */,
@@ -92,18 +117,28 @@
 			children = (
 				1F0D41DE2226B1FD00B81438 /* AppDelegate.h */,
 				1F0D41DF2226B1FD00B81438 /* AppDelegate.m */,
-				1F0D41E12226B1FD00B81438 /* ViewController.h */,
-				1F0D41E22226B1FD00B81438 /* ViewController.m */,
-				1F0D41E42226B1FD00B81438 /* Main.storyboard */,
-				1F0D41EA2226B1FE00B81438 /* Assets.xcassets */,
 				1F0D41EC2226B1FE00B81438 /* LaunchScreen.storyboard */,
+				1F0D41EA2226B1FE00B81438 /* Assets.xcassets */,
 				1F0D41EF2226B1FE00B81438 /* Info.plist */,
+				1F0D41E42226B1FD00B81438 /* Main.storyboard */,
 				1F0D41F02226B1FE00B81438 /* main.m */,
 				1F0D41E72226B1FD00B81438 /* Playground.xcdatamodeld */,
-				1F0F03762227EF350071F11E /* Stuff.h */,
-				1F0F03772227EF350071F11E /* Stuff.m */,
-				1F0F03792229144C0071F11E /* Foo.h */,
-				1F0F037A2229144C0071F11E /* Foo.m */,
+				1F41BB1F2236615600DBECFC /* SplashViewController.h */,
+				1F41BB202236615600DBECFC /* SplashViewController.m */,
+				1F41BB222236616C00DBECFC /* HomeViewController.h */,
+				1F41BB232236616C00DBECFC /* HomeViewController.m */,
+				1F41BB252236622400DBECFC /* LoginViewController.h */,
+				1F41BB262236622400DBECFC /* LoginViewController.m */,
+				1F41BB282236623900DBECFC /* SignupViewController.h */,
+				1F41BB292236623900DBECFC /* SignupViewController.m */,
+				1F41BB2E22366C6100DBECFC /* CoreDataManager.h */,
+				1F41BB2F22366C6100DBECFC /* CoreDataManager.m */,
+				1F41BB31223675D200DBECFC /* CoreDataEngine.h */,
+				1F41BB32223675D200DBECFC /* CoreDataEngine.m */,
+				1F41BB4622367DB000DBECFC /* UserModel.h */,
+				1F41BB4722367DB000DBECFC /* UserModel.m */,
+				1F41BB49223698B600DBECFC /* DataStore.h */,
+				1F41BB4A223698B600DBECFC /* DataStore.m */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -224,12 +259,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F0F037B2229144C0071F11E /* Foo.m in Sources */,
-				1F0D41E32226B1FD00B81438 /* ViewController.m in Sources */,
+				1F41BB33223675D200DBECFC /* CoreDataEngine.m in Sources */,
+				1F41BB212236615600DBECFC /* SplashViewController.m in Sources */,
+				1F41BB4822367DB000DBECFC /* UserModel.m in Sources */,
 				1F0D41E02226B1FD00B81438 /* AppDelegate.m in Sources */,
+				1F41BB3022366C6100DBECFC /* CoreDataManager.m in Sources */,
+				1F41BB632236A72E00DBECFC /* User+CoreDataProperties.m in Sources */,
+				1F41BB4B223698B600DBECFC /* DataStore.m in Sources */,
+				1F41BB622236A72E00DBECFC /* User+CoreDataClass.m in Sources */,
 				1F0D41F12226B1FE00B81438 /* main.m in Sources */,
+				1F41BB272236622400DBECFC /* LoginViewController.m in Sources */,
 				1F0D41E92226B1FD00B81438 /* Playground.xcdatamodeld in Sources */,
-				1F0F03782227EF350071F11E /* Stuff.m in Sources */,
+				1F41BB2A2236623900DBECFC /* SignupViewController.m in Sources */,
+				1F41BB242236616C00DBECFC /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

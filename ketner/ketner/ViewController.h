@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  Playground
+//  ketner
 //
-//  Created by Tom Belov on 27/02/2019.
+//  Created by Tom Belov on 11/03/2019.
 //  Copyright © 2019 Tom Belov. All rights reserved.
 //
 
@@ -10,7 +10,6 @@
 
 @interface ViewController : UIViewController
 
-- (int) getFive;
 
 @end
 
