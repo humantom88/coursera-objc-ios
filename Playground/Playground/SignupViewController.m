@@ -22,10 +22,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)signupTapped:(id)sender {
-    NSDictionary* userInput = [[NSDictionary alloc]init];
-    [userInput setValue:self.nameField.text forKey:@"name"];
-    [userInput setValue:self.passwordField forKey:@"password"];
-
+    NSDictionary* userInput = @{@"name": self.nameField.text, @"password": self.passwordField.text};
     UserModel* userModel = [[UserModel alloc] initWithDictionary:userInput];
     [self createUser:userModel];
     

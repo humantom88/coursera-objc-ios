@@ -19,9 +19,10 @@
 
 - (IBAction)loginTapped:(id)sender
 {
-    NSDictionary* userInput = [[NSDictionary alloc]init];
-    [userInput setValue:self.emailField.text forKey:@"name"];
-    [userInput setValue:self.passwordField forKey:@"password"];
+    NSDictionary* userInput = @{
+        @"name": self.emailField.text,
+        @"password": self.passwordField.text                            
+    };
     UserModel* userModel = [[UserModel alloc] initWithDictionary:userInput];
     [self login:userModel];
 }
