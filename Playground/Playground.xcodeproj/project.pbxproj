@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F0D41E02226B1FD00B81438 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D41DF2226B1FD00B81438 /* AppDelegate.m */; };
-		1F0D41E62226B1FD00B81438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D41E42226B1FD00B81438 /* Main.storyboard */; };
 		1F0D41E92226B1FD00B81438 /* Playground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D41E72226B1FD00B81438 /* Playground.xcdatamodeld */; };
 		1F0D41EB2226B1FE00B81438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D41EA2226B1FE00B81438 /* Assets.xcassets */; };
-		1F0D41EE2226B1FE00B81438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D41EC2226B1FE00B81438 /* LaunchScreen.storyboard */; };
 		1F0D41F12226B1FE00B81438 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D41F02226B1FE00B81438 /* main.m */; };
 		1F0F038822295A880071F11E /* PlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F038722295A880071F11E /* PlaygroundTests.m */; };
 		1F41BB212236615600DBECFC /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB202236615600DBECFC /* SplashViewController.m */; };
@@ -20,10 +18,26 @@
 		1F41BB2A2236623900DBECFC /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB292236623900DBECFC /* SignupViewController.m */; };
 		1F41BB3022366C6100DBECFC /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB2F22366C6100DBECFC /* CoreDataManager.m */; };
 		1F41BB33223675D200DBECFC /* CoreDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB32223675D200DBECFC /* CoreDataEngine.m */; };
-		1F41BB4822367DB000DBECFC /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB4722367DB000DBECFC /* UserModel.m */; };
 		1F41BB4B223698B600DBECFC /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB4A223698B600DBECFC /* DataStore.m */; };
-		1F41BB622236A72E00DBECFC /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB602236A72E00DBECFC /* User+CoreDataClass.m */; };
-		1F41BB632236A72E00DBECFC /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB612236A72E00DBECFC /* User+CoreDataProperties.m */; };
+		1F41BB7D22379B7D00DBECFC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41BB7C22379B7D00DBECFC /* Home.storyboard */; };
+		1F41BB7F22379C2000DBECFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41BB7E22379C2000DBECFC /* Login.storyboard */; };
+		1F41BB8122379C2A00DBECFC /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41BB8022379C2A00DBECFC /* Signup.storyboard */; };
+		1F41BB8322379C3500DBECFC /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41BB8222379C3500DBECFC /* Splash.storyboard */; };
+		1F41BB8622379D0300DBECFC /* HomeInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB8522379D0300DBECFC /* HomeInteractor.m */; };
+		1F41BB8C22379D4500DBECFC /* LoginInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB8B22379D4500DBECFC /* LoginInteractor.m */; };
+		1F41BB9822379D9B00DBECFC /* SplashInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB9722379D9B00DBECFC /* SplashInteractor.m */; };
+		1F41BB9E2237A9AB00DBECFC /* RootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BB9D2237A9AB00DBECFC /* RootWireframe.m */; };
+		1F41BBA12237A9E100DBECFC /* SignupWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BBA02237A9E100DBECFC /* SignupWireframe.m */; };
+		1F41BBA72237A9FF00DBECFC /* LoginWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BBA62237A9FF00DBECFC /* LoginWireframe.m */; };
+		1F41BBAD2237AA1600DBECFC /* HomeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BBAC2237AA1600DBECFC /* HomeWireframe.m */; };
+		1F41BBB32237AA3000DBECFC /* SplashWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BBB22237AA3000DBECFC /* SplashWireframe.m */; };
+		1F41BBBE2237B6BB00DBECFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41BBBC2237B6BB00DBECFC /* LaunchScreen.storyboard */; };
+		1F41BBC82237EF1F00DBECFC /* SignupInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F41BBC72237EF1F00DBECFC /* SignupInteractor.m */; };
+		1F74279D223BBA2000D4BCDF /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F742799223BBA2000D4BCDF /* User+CoreDataClass.m */; };
+		1F74279E223BBA2000D4BCDF /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F74279C223BBA2000D4BCDF /* User+CoreDataProperties.m */; };
+		1F74282D223D6DA200D4BCDF /* PGDApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F74282C223D6DA200D4BCDF /* PGDApplicationAssembly.m */; };
+		419EECC585F312C6CE56F495 /* libPods-PlaygroundTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBCFD34F2582E2FCDD8647C /* libPods-PlaygroundTests.a */; };
+		5C6034FA3A3840DE97A4EBB2 /* libPods-Playground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E7934CD56BB4077CC98EA /* libPods-Playground.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +54,8 @@
 		1F0D41DB2226B1FD00B81438 /* Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0D41DE2226B1FD00B81438 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F0D41DF2226B1FD00B81438 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F0D41E52226B1FD00B81438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F0D41E82226B1FD00B81438 /* Playground.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Playground.xcdatamodel; sourceTree = "<group>"; };
 		1F0D41EA2226B1FE00B81438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F0D41ED2226B1FE00B81438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F0D41EF2226B1FE00B81438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F0D41F02226B1FE00B81438 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F0F038522295A880071F11E /* PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,24 +63,67 @@
 		1F0F038922295A880071F11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F41BB1F2236615600DBECFC /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		1F41BB202236615600DBECFC /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		1F41BB222236616C00DBECFC /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		1F41BB232236616C00DBECFC /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		1F41BB252236622400DBECFC /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		1F41BB262236622400DBECFC /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		1F41BB282236623900DBECFC /* SignupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		1F41BB292236623900DBECFC /* SignupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		1F41BB2E22366C6100DBECFC /* CoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
 		1F41BB2F22366C6100DBECFC /* CoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
 		1F41BB31223675D200DBECFC /* CoreDataEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataEngine.h; sourceTree = "<group>"; };
 		1F41BB32223675D200DBECFC /* CoreDataEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataEngine.m; sourceTree = "<group>"; };
-		1F41BB4622367DB000DBECFC /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
-		1F41BB4722367DB000DBECFC /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		1F41BB49223698B600DBECFC /* DataStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
 		1F41BB4A223698B600DBECFC /* DataStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
-		1F41BB5E2236A72E00DBECFC /* User+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
-		1F41BB5F2236A72E00DBECFC /* User+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
-		1F41BB602236A72E00DBECFC /* User+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
-		1F41BB612236A72E00DBECFC /* User+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F41BB7C22379B7D00DBECFC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1F41BB7E22379C2000DBECFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		1F41BB8022379C2A00DBECFC /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Signup.storyboard; path = Playground/Modules/Signup/UI/Signup.storyboard; sourceTree = SOURCE_ROOT; };
+		1F41BB8222379C3500DBECFC /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		1F41BB8422379D0300DBECFC /* HomeInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeInteractor.h; sourceTree = "<group>"; };
+		1F41BB8522379D0300DBECFC /* HomeInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeInteractor.m; sourceTree = "<group>"; };
+		1F41BB8A22379D4500DBECFC /* LoginInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInteractor.h; sourceTree = "<group>"; };
+		1F41BB8B22379D4500DBECFC /* LoginInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginInteractor.m; sourceTree = "<group>"; };
+		1F41BB9622379D9B00DBECFC /* SplashInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashInteractor.h; sourceTree = "<group>"; };
+		1F41BB9722379D9B00DBECFC /* SplashInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashInteractor.m; sourceTree = "<group>"; };
+		1F41BB9922379DAC00DBECFC /* SplashInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashInteractorProtocol.h; sourceTree = "<group>"; };
+		1F41BB9C2237A9AB00DBECFC /* RootWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootWireframe.h; sourceTree = "<group>"; };
+		1F41BB9D2237A9AB00DBECFC /* RootWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootWireframe.m; sourceTree = "<group>"; };
+		1F41BB9F2237A9E100DBECFC /* SignupWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SignupWireframe.h; path = Playground/Modules/Signup/Routing/SignupWireframe.h; sourceTree = SOURCE_ROOT; };
+		1F41BBA02237A9E100DBECFC /* SignupWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SignupWireframe.m; path = Playground/Modules/Signup/Routing/SignupWireframe.m; sourceTree = SOURCE_ROOT; };
+		1F41BBA52237A9FF00DBECFC /* LoginWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginWireframe.h; sourceTree = "<group>"; };
+		1F41BBA62237A9FF00DBECFC /* LoginWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginWireframe.m; sourceTree = "<group>"; };
+		1F41BBAC2237AA1600DBECFC /* HomeWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeWireframe.m; sourceTree = "<group>"; };
+		1F41BBB12237AA3000DBECFC /* SplashWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashWireframe.h; sourceTree = "<group>"; };
+		1F41BBB22237AA3000DBECFC /* SplashWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashWireframe.m; sourceTree = "<group>"; };
+		1F41BBB82237AB2000DBECFC /* SplashWireframeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashWireframeProtocol.h; sourceTree = "<group>"; };
+		1F41BBB92237AB3900DBECFC /* HomeWireframeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeWireframeProtocol.h; sourceTree = "<group>"; };
+		1F41BBBA2237AB4B00DBECFC /* LoginWireframeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginWireframeProtocol.h; sourceTree = "<group>"; };
+		1F41BBBB2237AB6100DBECFC /* SignupWireframeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SignupWireframeProtocol.h; path = Playground/Modules/Signup/Routing/SignupWireframeProtocol.h; sourceTree = SOURCE_ROOT; };
+		1F41BBBD2237B6BB00DBECFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../CoreDataCoursera/CoreDataCoursera/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F41BBBF2237C2D200DBECFC /* SignupViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupViewControllerProtocol.h; sourceTree = "<group>"; };
+		1F41BBC02237CA1F00DBECFC /* SignupInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SignupInteractorProtocol.h; path = Playground/Modules/Signup/BusinessLogic/SignupInteractorProtocol.h; sourceTree = SOURCE_ROOT; };
+		1F41BBC12237CEDC00DBECFC /* SplashViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewControllerProtocol.h; sourceTree = "<group>"; };
+		1F41BBC52237EA8800DBECFC /* LoginInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInteractorProtocol.h; sourceTree = "<group>"; };
+		1F41BBC62237EF1F00DBECFC /* SignupInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupInteractor.h; sourceTree = "<group>"; };
+		1F41BBC72237EF1F00DBECFC /* SignupInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignupInteractor.m; sourceTree = "<group>"; };
+		1F41BBC92238CFDB00DBECFC /* LoginViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewControllerProtocol.h; sourceTree = "<group>"; };
+		1F41BBCA2238E66F00DBECFC /* HomeInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeInteractorProtocol.h; sourceTree = "<group>"; };
+		1F41BBCB2238EE7D00DBECFC /* HomeViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewControllerProtocol.h; sourceTree = "<group>"; };
+		1F41BBCC22393CB800DBECFC /* SignupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		1F41BBCD22393D2300DBECFC /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1F742799223BBA2000D4BCDF /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataClass.m"; path = "CoreData Entities/User+CoreDataClass.m"; sourceTree = "<group>"; };
+		1F74279A223BBA2000D4BCDF /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "CoreData Entities/User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1F74279B223BBA2000D4BCDF /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataClass.h"; path = "CoreData Entities/User+CoreDataClass.h"; sourceTree = "<group>"; };
+		1F74279C223BBA2000D4BCDF /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "CoreData Entities/User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1F74279F223BBE7600D4BCDF /* HomeWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeWireframe.h; sourceTree = "<group>"; };
+		1F74282B223D6DA200D4BCDF /* PGDApplicationAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGDApplicationAssembly.h; sourceTree = "<group>"; };
+		1F74282C223D6DA200D4BCDF /* PGDApplicationAssembly.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGDApplicationAssembly.m; sourceTree = "<group>"; };
+		1FC82EF7223B827E00A57B43 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		1FC82EF8223B827E00A57B43 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		2EBCFD34F2582E2FCDD8647C /* libPods-PlaygroundTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlaygroundTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B7CBF695148AA6E05A8D2A /* Pods-Playground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground.debug.xcconfig"; path = "Target Support Files/Pods-Playground/Pods-Playground.debug.xcconfig"; sourceTree = "<group>"; };
+		42FAF7DAD026F3F035E97D0B /* Pods-PlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-PlaygroundTests/Pods-PlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		91C57F5E20C912D6BDD0DB72 /* Pods-PlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaygroundTests.debug.xcconfig"; path = "Target Support Files/Pods-PlaygroundTests/Pods-PlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F21E7934CD56BB4077CC98EA /* libPods-Playground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Playground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFE6931267F573E8B6A08D2 /* Pods-Playground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground.release.xcconfig"; path = "Target Support Files/Pods-Playground/Pods-Playground.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6034FA3A3840DE97A4EBB2 /* libPods-Playground.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				419EECC585F312C6CE56F495 /* libPods-PlaygroundTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,14 +149,11 @@
 		1F0D41D22226B1FD00B81438 = {
 			isa = PBXGroup;
 			children = (
-				1F41BB5E2236A72E00DBECFC /* User+CoreDataProperties.h */,
-				1F41BB5F2236A72E00DBECFC /* User+CoreDataClass.h */,
-				1F41BB602236A72E00DBECFC /* User+CoreDataClass.m */,
-				1F41BB612236A72E00DBECFC /* User+CoreDataProperties.m */,
 				1F0D41DD2226B1FD00B81438 /* Playground */,
 				1F0F038622295A880071F11E /* PlaygroundTests */,
 				1F0D41DC2226B1FD00B81438 /* Products */,
 				1F0F037E222942CD0071F11E /* Frameworks */,
+				A81985292F57544EBE4A4A00 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,30 +169,18 @@
 		1F0D41DD2226B1FD00B81438 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				1F41BB6B22379AA700DBECFC /* Modules */,
+				1F41BB6822379A2E00DBECFC /* Common */,
 				1F0D41DE2226B1FD00B81438 /* AppDelegate.h */,
 				1F0D41DF2226B1FD00B81438 /* AppDelegate.m */,
-				1F0D41EC2226B1FE00B81438 /* LaunchScreen.storyboard */,
 				1F0D41EA2226B1FE00B81438 /* Assets.xcassets */,
 				1F0D41EF2226B1FE00B81438 /* Info.plist */,
-				1F0D41E42226B1FD00B81438 /* Main.storyboard */,
 				1F0D41F02226B1FE00B81438 /* main.m */,
-				1F0D41E72226B1FD00B81438 /* Playground.xcdatamodeld */,
-				1F41BB1F2236615600DBECFC /* SplashViewController.h */,
-				1F41BB202236615600DBECFC /* SplashViewController.m */,
-				1F41BB222236616C00DBECFC /* HomeViewController.h */,
-				1F41BB232236616C00DBECFC /* HomeViewController.m */,
-				1F41BB252236622400DBECFC /* LoginViewController.h */,
-				1F41BB262236622400DBECFC /* LoginViewController.m */,
-				1F41BB282236623900DBECFC /* SignupViewController.h */,
-				1F41BB292236623900DBECFC /* SignupViewController.m */,
-				1F41BB2E22366C6100DBECFC /* CoreDataManager.h */,
-				1F41BB2F22366C6100DBECFC /* CoreDataManager.m */,
-				1F41BB31223675D200DBECFC /* CoreDataEngine.h */,
-				1F41BB32223675D200DBECFC /* CoreDataEngine.m */,
-				1F41BB4622367DB000DBECFC /* UserModel.h */,
-				1F41BB4722367DB000DBECFC /* UserModel.m */,
-				1F41BB49223698B600DBECFC /* DataStore.h */,
-				1F41BB4A223698B600DBECFC /* DataStore.m */,
+				1F41BBBC2237B6BB00DBECFC /* LaunchScreen.storyboard */,
+				1F41BB9C2237A9AB00DBECFC /* RootWireframe.h */,
+				1F41BB9D2237A9AB00DBECFC /* RootWireframe.m */,
+				1F74282B223D6DA200D4BCDF /* PGDApplicationAssembly.h */,
+				1F74282C223D6DA200D4BCDF /* PGDApplicationAssembly.m */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -146,6 +188,8 @@
 		1F0F037E222942CD0071F11E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F21E7934CD56BB4077CC98EA /* libPods-Playground.a */,
+				2EBCFD34F2582E2FCDD8647C /* libPods-PlaygroundTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +203,244 @@
 			path = PlaygroundTests;
 			sourceTree = "<group>";
 		};
+		1F41BB662237992800DBECFC /* Data Store */ = {
+			isa = PBXGroup;
+			children = (
+				1F742798223B841D00D4BCDF /* Entities */,
+				1FC82F05223B83C200A57B43 /* CoreData Entities */,
+				1F0D41E72226B1FD00B81438 /* Playground.xcdatamodeld */,
+				1F41BB2E22366C6100DBECFC /* CoreDataManager.h */,
+				1F41BB2F22366C6100DBECFC /* CoreDataManager.m */,
+				1F41BB31223675D200DBECFC /* CoreDataEngine.h */,
+				1F41BB32223675D200DBECFC /* CoreDataEngine.m */,
+				1F41BB49223698B600DBECFC /* DataStore.h */,
+				1F41BB4A223698B600DBECFC /* DataStore.m */,
+			);
+			path = "Data Store";
+			sourceTree = "<group>";
+		};
+		1F41BB6822379A2E00DBECFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB662237992800DBECFC /* Data Store */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1F41BB6B22379AA700DBECFC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB6F22379AE900DBECFC /* Signup */,
+				1F41BB6E22379AE300DBECFC /* Login */,
+				1F41BB6D22379ADD00DBECFC /* Home */,
+				1F41BB6C22379AD500DBECFC /* Splash */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1F41BB6C22379AD500DBECFC /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				1F742873223EBE4700D4BCDF /* Assembly */,
+				1F41BB7722379B4C00DBECFC /* UI */,
+				1F41BB7822379B4C00DBECFC /* Routing */,
+				1F41BB7622379B4C00DBECFC /* Business Logic */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		1F41BB6D22379ADD00DBECFC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB7222379B2C00DBECFC /* UI */,
+				1F41BB7122379B1E00DBECFC /* Routing */,
+				1F41BB7022379B1400DBECFC /* Business Logic */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1F41BB6E22379AE300DBECFC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB7422379B4900DBECFC /* UI */,
+				1F41BB7522379B4900DBECFC /* Routing */,
+				1F41BB7322379B4900DBECFC /* Business Logic */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1F41BB6F22379AE900DBECFC /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB7A22379B4E00DBECFC /* UI */,
+				1F41BB7B22379B4E00DBECFC /* Routing */,
+				1F41BB7922379B4E00DBECFC /* BusinessLogic */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		1F41BB7022379B1400DBECFC /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB8422379D0300DBECFC /* HomeInteractor.h */,
+				1F41BB8522379D0300DBECFC /* HomeInteractor.m */,
+				1F41BBCA2238E66F00DBECFC /* HomeInteractorProtocol.h */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		1F41BB7122379B1E00DBECFC /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BBAC2237AA1600DBECFC /* HomeWireframe.m */,
+				1F41BBB92237AB3900DBECFC /* HomeWireframeProtocol.h */,
+				1F74279F223BBE7600D4BCDF /* HomeWireframe.h */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		1F41BB7222379B2C00DBECFC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB232236616C00DBECFC /* HomeViewController.m */,
+				1F41BB7C22379B7D00DBECFC /* Home.storyboard */,
+				1F41BBCB2238EE7D00DBECFC /* HomeViewControllerProtocol.h */,
+				1F41BBCD22393D2300DBECFC /* HomeViewController.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1F41BB7322379B4900DBECFC /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB8A22379D4500DBECFC /* LoginInteractor.h */,
+				1F41BB8B22379D4500DBECFC /* LoginInteractor.m */,
+				1F41BBC52237EA8800DBECFC /* LoginInteractorProtocol.h */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		1F41BB7422379B4900DBECFC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB252236622400DBECFC /* LoginViewController.h */,
+				1F41BB262236622400DBECFC /* LoginViewController.m */,
+				1F41BB7E22379C2000DBECFC /* Login.storyboard */,
+				1F41BBC92238CFDB00DBECFC /* LoginViewControllerProtocol.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1F41BB7522379B4900DBECFC /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BBA52237A9FF00DBECFC /* LoginWireframe.h */,
+				1F41BBA62237A9FF00DBECFC /* LoginWireframe.m */,
+				1F41BBBA2237AB4B00DBECFC /* LoginWireframeProtocol.h */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		1F41BB7622379B4C00DBECFC /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB9622379D9B00DBECFC /* SplashInteractor.h */,
+				1F41BB9722379D9B00DBECFC /* SplashInteractor.m */,
+				1F41BB9922379DAC00DBECFC /* SplashInteractorProtocol.h */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		1F41BB7722379B4C00DBECFC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB1F2236615600DBECFC /* SplashViewController.h */,
+				1F41BB202236615600DBECFC /* SplashViewController.m */,
+				1F41BB8222379C3500DBECFC /* Splash.storyboard */,
+				1F41BBC12237CEDC00DBECFC /* SplashViewControllerProtocol.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1F41BB7822379B4C00DBECFC /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BBB12237AA3000DBECFC /* SplashWireframe.h */,
+				1F41BBB22237AA3000DBECFC /* SplashWireframe.m */,
+				1F41BBB82237AB2000DBECFC /* SplashWireframeProtocol.h */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		1F41BB7922379B4E00DBECFC /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BBC02237CA1F00DBECFC /* SignupInteractorProtocol.h */,
+				1F41BBC62237EF1F00DBECFC /* SignupInteractor.h */,
+				1F41BBC72237EF1F00DBECFC /* SignupInteractor.m */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		1F41BB7A22379B4E00DBECFC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB292236623900DBECFC /* SignupViewController.m */,
+				1F41BB8022379C2A00DBECFC /* Signup.storyboard */,
+				1F41BBBF2237C2D200DBECFC /* SignupViewControllerProtocol.h */,
+				1F41BBCC22393CB800DBECFC /* SignupViewController.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1F41BB7B22379B4E00DBECFC /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				1F41BB9F2237A9E100DBECFC /* SignupWireframe.h */,
+				1F41BBA02237A9E100DBECFC /* SignupWireframe.m */,
+				1F41BBBB2237AB6100DBECFC /* SignupWireframeProtocol.h */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		1F742798223B841D00D4BCDF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1FC82EF7223B827E00A57B43 /* UserModel.h */,
+				1FC82EF8223B827E00A57B43 /* UserModel.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		1F742873223EBE4700D4BCDF /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1FC82F05223B83C200A57B43 /* CoreData Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1F74279B223BBA2000D4BCDF /* User+CoreDataClass.h */,
+				1F742799223BBA2000D4BCDF /* User+CoreDataClass.m */,
+				1F74279A223BBA2000D4BCDF /* User+CoreDataProperties.h */,
+				1F74279C223BBA2000D4BCDF /* User+CoreDataProperties.m */,
+			);
+			name = "CoreData Entities";
+			sourceTree = "<group>";
+		};
+		A81985292F57544EBE4A4A00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30B7CBF695148AA6E05A8D2A /* Pods-Playground.debug.xcconfig */,
+				FFFE6931267F573E8B6A08D2 /* Pods-Playground.release.xcconfig */,
+				91C57F5E20C912D6BDD0DB72 /* Pods-PlaygroundTests.debug.xcconfig */,
+				42FAF7DAD026F3F035E97D0B /* Pods-PlaygroundTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +448,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F0D41F42226B1FE00B81438 /* Build configuration list for PBXNativeTarget "Playground" */;
 			buildPhases = (
+				37C2611E771D344DB385F8B5 /* [CP] Check Pods Manifest.lock */,
 				1F0D41D72226B1FD00B81438 /* Sources */,
 				1F0D41D82226B1FD00B81438 /* Frameworks */,
 				1F0D41D92226B1FD00B81438 /* Resources */,
@@ -183,6 +466,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F0F038C22295A880071F11E /* Build configuration list for PBXNativeTarget "PlaygroundTests" */;
 			buildPhases = (
+				BFDD1DE6F8142E30D4BF47E8 /* [CP] Check Pods Manifest.lock */,
 				1F0F038122295A880071F11E /* Sources */,
 				1F0F038222295A880071F11E /* Frameworks */,
 				1F0F038322295A880071F11E /* Resources */,
@@ -239,9 +523,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F0D41EE2226B1FE00B81438 /* LaunchScreen.storyboard in Resources */,
 				1F0D41EB2226B1FE00B81438 /* Assets.xcassets in Resources */,
-				1F0D41E62226B1FD00B81438 /* Main.storyboard in Resources */,
+				1F41BB7F22379C2000DBECFC /* Login.storyboard in Resources */,
+				1F41BB8122379C2A00DBECFC /* Signup.storyboard in Resources */,
+				1F41BBBE2237B6BB00DBECFC /* LaunchScreen.storyboard in Resources */,
+				1F41BB7D22379B7D00DBECFC /* Home.storyboard in Resources */,
+				1F41BB8322379C3500DBECFC /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,23 +541,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37C2611E771D344DB385F8B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Playground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFDD1DE6F8142E30D4BF47E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaygroundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F0D41D72226B1FD00B81438 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F74279E223BBA2000D4BCDF /* User+CoreDataProperties.m in Sources */,
+				1F41BB8C22379D4500DBECFC /* LoginInteractor.m in Sources */,
+				1F74282D223D6DA200D4BCDF /* PGDApplicationAssembly.m in Sources */,
 				1F41BB33223675D200DBECFC /* CoreDataEngine.m in Sources */,
 				1F41BB212236615600DBECFC /* SplashViewController.m in Sources */,
-				1F41BB4822367DB000DBECFC /* UserModel.m in Sources */,
 				1F0D41E02226B1FD00B81438 /* AppDelegate.m in Sources */,
 				1F41BB3022366C6100DBECFC /* CoreDataManager.m in Sources */,
-				1F41BB632236A72E00DBECFC /* User+CoreDataProperties.m in Sources */,
 				1F41BB4B223698B600DBECFC /* DataStore.m in Sources */,
-				1F41BB622236A72E00DBECFC /* User+CoreDataClass.m in Sources */,
 				1F0D41F12226B1FE00B81438 /* main.m in Sources */,
 				1F41BB272236622400DBECFC /* LoginViewController.m in Sources */,
+				1F41BBA72237A9FF00DBECFC /* LoginWireframe.m in Sources */,
 				1F0D41E92226B1FD00B81438 /* Playground.xcdatamodeld in Sources */,
+				1F41BBAD2237AA1600DBECFC /* HomeWireframe.m in Sources */,
+				1F41BBA12237A9E100DBECFC /* SignupWireframe.m in Sources */,
+				1F41BB9822379D9B00DBECFC /* SplashInteractor.m in Sources */,
+				1F41BB8622379D0300DBECFC /* HomeInteractor.m in Sources */,
+				1F74279D223BBA2000D4BCDF /* User+CoreDataClass.m in Sources */,
+				1F41BBB32237AA3000DBECFC /* SplashWireframe.m in Sources */,
 				1F41BB2A2236623900DBECFC /* SignupViewController.m in Sources */,
+				1F41BB9E2237A9AB00DBECFC /* RootWireframe.m in Sources */,
+				1F41BBC82237EF1F00DBECFC /* SignupInteractor.m in Sources */,
 				1F41BB242236616C00DBECFC /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,18 +637,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1F0D41E42226B1FD00B81438 /* Main.storyboard */ = {
+		1F41BBBC2237B6BB00DBECFC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1F0D41E52226B1FD00B81438 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1F0D41EC2226B1FE00B81438 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F0D41ED2226B1FE00B81438 /* Base */,
+				1F41BBBD2237B6BB00DBECFC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -427,6 +762,7 @@
 		};
 		1F0D41F52226B1FE00B81438 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B7CBF695148AA6E05A8D2A /* Pods-Playground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -444,6 +780,7 @@
 		};
 		1F0D41F62226B1FE00B81438 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFE6931267F573E8B6A08D2 /* Pods-Playground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,6 +798,7 @@
 		};
 		1F0F038D22295A880071F11E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C57F5E20C912D6BDD0DB72 /* Pods-PlaygroundTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +818,7 @@
 		};
 		1F0F038E22295A880071F11E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FAF7DAD026F3F035E97D0B /* Pods-PlaygroundTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

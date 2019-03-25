@@ -12,10 +12,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MyUITableViewCell : UITableViewCell
+
 @property (strong, nonatomic) ToDoEntity *localToDoEntity;
-@property (weak, nonatomic) IBOutlet UILabel *toDoTitleLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *toDoDueDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *toDoTitleLabel;
+
 - (void) setInternalFields:(ToDoEntity *)incomingToDoEntity;
+
 @end
 
 NS_ASSUME_NONNULL_END

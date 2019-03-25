@@ -8,17 +8,26 @@
 
 #import "AppDelegate.h"
 #import "DataStore.h"
+#import "RootWireframe.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) RootWireframe* rootWireframe;
 @end
 
 @implementation AppDelegate
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.rootWireframe = [[RootWireframe alloc] init];
+    }
+    return self;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
+    return [self.rootWireframe application:application didFinishLaunchingWithOptions:launchOptions window:self.window];
 }
 
 

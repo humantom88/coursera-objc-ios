@@ -10,12 +10,13 @@
 
 @implementation MyUITableViewCell
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
     [super awakeFromNib];
-    // Initialization code
 }
 
-- (void) setInternalFields:(ToDoEntity *)incomingToDoEntity {
+- (void) setInternalFields:(ToDoEntity *)incomingToDoEntity
+{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateStyle:NSDateFormatterShortStyle];
     [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
@@ -26,10 +27,10 @@
     self.toDoDueDateLabel.text = [dateFormatter stringFromDate:incomingToDoEntity.toDoDueDate];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
+    [super setSelected:selected
+              animated:animated];
 }
 
 @end

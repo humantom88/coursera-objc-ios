@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="1ZY-3X-pIM">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="V5B-LF-GWx" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SAp-cJ-xf2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQx-d1-Kbh">
+                                <rect key="frame" x="0.0" y="260" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-UG-EMv">
+                                <rect key="frame" x="20" y="617" width="157.5" height="30"/>
+                                <state key="normal" title="Delete User"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="V5B-LF-GWx" eventType="touchUpInside" id="b3q-Pc-pLr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXs-Kv-I7h">
+                                <rect key="frame" x="197.5" y="617" width="157.5" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutTapped:" destination="V5B-LF-GWx" eventType="touchUpInside" id="sbd-XX-TOR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T30-4r-bCp" firstAttribute="bottom" secondItem="yXs-Kv-I7h" secondAttribute="bottom" constant="20" id="MrD-G4-akI"/>
+                            <constraint firstItem="T30-4r-bCp" firstAttribute="trailing" secondItem="VQx-d1-Kbh" secondAttribute="trailing" id="WuG-tb-t0t"/>
+                            <constraint firstItem="yXs-Kv-I7h" firstAttribute="leading" secondItem="HRy-UG-EMv" secondAttribute="trailing" constant="20" id="dyK-Jd-bcG"/>
+                            <constraint firstItem="HRy-UG-EMv" firstAttribute="leading" secondItem="SAp-cJ-xf2" secondAttribute="leading" constant="20" id="elX-CQ-aDX"/>
+                            <constraint firstItem="VQx-d1-Kbh" firstAttribute="top" secondItem="T30-4r-bCp" secondAttribute="top" constant="240" id="hVd-va-VbI"/>
+                            <constraint firstItem="T30-4r-bCp" firstAttribute="trailing" secondItem="yXs-Kv-I7h" secondAttribute="trailing" constant="20" id="i7d-hm-yNh"/>
+                            <constraint firstItem="yXs-Kv-I7h" firstAttribute="width" secondItem="HRy-UG-EMv" secondAttribute="width" id="phn-la-p7G"/>
+                            <constraint firstItem="VQx-d1-Kbh" firstAttribute="leading" secondItem="T30-4r-bCp" secondAttribute="leading" id="tDN-UZ-eF6"/>
+                            <constraint firstItem="T30-4r-bCp" firstAttribute="bottom" secondItem="HRy-UG-EMv" secondAttribute="bottom" constant="20" id="ypS-yC-QHl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T30-4r-bCp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8w-sM-9Rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727" y="375"/>
+        </scene>
+    </scenes>
+</document>
