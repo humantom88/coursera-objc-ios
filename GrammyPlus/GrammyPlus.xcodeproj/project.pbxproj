@@ -13,7 +13,8 @@
 		1F2DAA07220C678F004F8994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2DAA06220C678F004F8994 /* Assets.xcassets */; };
 		1F2DAA0A220C678F004F8994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2DAA08220C678F004F8994 /* LaunchScreen.storyboard */; };
 		1F2DAA0D220C678F004F8994 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2DAA0C220C678F004F8994 /* main.m */; };
-		1F2DAA15220C6C20004F8994 /* callBlack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F2DAA14220C6C20004F8994 /* callBlack.jpg */; };
+		1FAAF6E32270F5D0004F9608 /* response.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAF6E22270F5CF004F9608 /* response.jpg */; };
+		1FAAF6E92270F704004F9608 /* ViewController+VCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAF6E82270F704004F9608 /* ViewController+VCCategory.m */; };
 		D1140508E7BC604DE13A3A4D /* libPods-GrammyPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85077C49CDE18A62914363AE /* libPods-GrammyPlus.a */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +29,9 @@
 		1F2DAA09220C678F004F8994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F2DAA0B220C678F004F8994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F2DAA0C220C678F004F8994 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1F2DAA14220C6C20004F8994 /* callBlack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = callBlack.jpg; sourceTree = "<group>"; };
+		1FAAF6E22270F5CF004F9608 /* response.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = response.jpg; path = ../../../../../../../../Downloads/response.jpg; sourceTree = "<group>"; };
+		1FAAF6E72270F704004F9608 /* ViewController+VCCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+VCCategory.h"; sourceTree = "<group>"; };
+		1FAAF6E82270F704004F9608 /* ViewController+VCCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+VCCategory.m"; sourceTree = "<group>"; };
 		3DE6FB6A5683C7165C037CAF /* Pods-GrammyPlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrammyPlus.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus.release.xcconfig"; sourceTree = "<group>"; };
 		85077C49CDE18A62914363AE /* libPods-GrammyPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrammyPlus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87C6775D1F67C3C52DC03A5 /* Pods-GrammyPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrammyPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrammyPlus/Pods-GrammyPlus.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,7 +95,9 @@
 		1F2DAA13220C6B52004F8994 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1F2DAA14220C6C20004F8994 /* callBlack.jpg */,
+				1FAAF6E72270F704004F9608 /* ViewController+VCCategory.h */,
+				1FAAF6E82270F704004F9608 /* ViewController+VCCategory.m */,
+				1FAAF6E22270F5CF004F9608 /* response.jpg */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,8 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F2DAA0A220C678F004F8994 /* LaunchScreen.storyboard in Resources */,
-				1F2DAA15220C6C20004F8994 /* callBlack.jpg in Resources */,
 				1F2DAA07220C678F004F8994 /* Assets.xcassets in Resources */,
+				1FAAF6E32270F5D0004F9608 /* response.jpg in Resources */,
 				1F2DAA05220C678D004F8994 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +211,7 @@
 				1F2DAA02220C678D004F8994 /* ViewController.m in Sources */,
 				1F2DAA0D220C678F004F8994 /* main.m in Sources */,
 				1F2DA9FF220C678D004F8994 /* AppDelegate.m in Sources */,
+				1FAAF6E92270F704004F9608 /* ViewController+VCCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

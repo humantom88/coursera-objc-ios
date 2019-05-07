@@ -73,7 +73,6 @@
         }]resume];
         
     }]resume];
-    
 }
 - (IBAction)loginButtonTapped:(id)sender {
     [[NXOAuth2AccountStore sharedStore] requestAccessToAccountWithType:@"Instagram"];

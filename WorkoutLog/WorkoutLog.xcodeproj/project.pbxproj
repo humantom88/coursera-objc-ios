@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FE3DA5C220DB53A00EB5707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3DA5B220DB53A00EB5707 /* AppDelegate.m */; };
-		1FE3DA5F220DB53A00EB5707 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3DA5E220DB53A00EB5707 /* ViewController.m */; };
-		1FE3DA62220DB53A00EB5707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3DA60220DB53A00EB5707 /* Main.storyboard */; };
-		1FE3DA64220DB53D00EB5707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3DA63220DB53D00EB5707 /* Assets.xcassets */; };
-		1FE3DA67220DB53D00EB5707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE3DA65220DB53D00EB5707 /* LaunchScreen.storyboard */; };
-		1FE3DA6A220DB53D00EB5707 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3DA69220DB53D00EB5707 /* main.m */; };
+		1FAAF6F822738DE2004F9608 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAF6F722738DE2004F9608 /* AppDelegate.m */; };
+		1FAAF6FB22738DE2004F9608 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAF6FA22738DE2004F9608 /* ViewController.m */; };
+		1FAAF6FE22738DE2004F9608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAF6FC22738DE2004F9608 /* Main.storyboard */; };
+		1FAAF70122738DE2004F9608 /* WorkoutLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAF6FF22738DE2004F9608 /* WorkoutLog.xcdatamodeld */; };
+		1FAAF70322738DE4004F9608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAF70222738DE4004F9608 /* Assets.xcassets */; };
+		1FAAF70622738DE4004F9608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAF70422738DE4004F9608 /* LaunchScreen.storyboard */; };
+		1FAAF70922738DE4004F9608 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAF70822738DE4004F9608 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1FE3DA57220DB53A00EB5707 /* PushyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FE3DA5A220DB53A00EB5707 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1FE3DA5B220DB53A00EB5707 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1FE3DA5D220DB53A00EB5707 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1FE3DA5E220DB53A00EB5707 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1FE3DA61220DB53A00EB5707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1FE3DA63220DB53D00EB5707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1FE3DA66220DB53D00EB5707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1FE3DA68220DB53D00EB5707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FE3DA69220DB53D00EB5707 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FAAF6F322738DE2004F9608 /* WorkoutLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAAF6F622738DE2004F9608 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1FAAF6F722738DE2004F9608 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1FAAF6F922738DE2004F9608 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1FAAF6FA22738DE2004F9608 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1FAAF6FD22738DE2004F9608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FAAF70022738DE2004F9608 /* WorkoutLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorkoutLog.xcdatamodel; sourceTree = "<group>"; };
+		1FAAF70222738DE4004F9608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FAAF70522738DE4004F9608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FAAF70722738DE4004F9608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FAAF70822738DE4004F9608 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FE3DA54220DB53A00EB5707 /* Frameworks */ = {
+		1FAAF6F022738DE2004F9608 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +41,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FE3DA4E220DB53A00EB5707 = {
+		1FAAF6EA22738DE2004F9608 = {
 			isa = PBXGroup;
 			children = (
-				1FE3DA59220DB53A00EB5707 /* PushyApp */,
-				1FE3DA58220DB53A00EB5707 /* Products */,
+				1FAAF6F522738DE2004F9608 /* WorkoutLog */,
+				1FAAF6F422738DE2004F9608 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1FE3DA58220DB53A00EB5707 /* Products */ = {
+		1FAAF6F422738DE2004F9608 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FE3DA57220DB53A00EB5707 /* PushyApp.app */,
+				1FAAF6F322738DE2004F9608 /* WorkoutLog.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FE3DA59220DB53A00EB5707 /* PushyApp */ = {
+		1FAAF6F522738DE2004F9608 /* WorkoutLog */ = {
 			isa = PBXGroup;
 			children = (
-				1FE3DA5A220DB53A00EB5707 /* AppDelegate.h */,
-				1FE3DA5B220DB53A00EB5707 /* AppDelegate.m */,
-				1FE3DA5D220DB53A00EB5707 /* ViewController.h */,
-				1FE3DA5E220DB53A00EB5707 /* ViewController.m */,
-				1FE3DA60220DB53A00EB5707 /* Main.storyboard */,
-				1FE3DA63220DB53D00EB5707 /* Assets.xcassets */,
-				1FE3DA65220DB53D00EB5707 /* LaunchScreen.storyboard */,
-				1FE3DA68220DB53D00EB5707 /* Info.plist */,
-				1FE3DA69220DB53D00EB5707 /* main.m */,
+				1FAAF6F622738DE2004F9608 /* AppDelegate.h */,
+				1FAAF6F722738DE2004F9608 /* AppDelegate.m */,
+				1FAAF6F922738DE2004F9608 /* ViewController.h */,
+				1FAAF6FA22738DE2004F9608 /* ViewController.m */,
+				1FAAF6FC22738DE2004F9608 /* Main.storyboard */,
+				1FAAF70222738DE4004F9608 /* Assets.xcassets */,
+				1FAAF70422738DE4004F9608 /* LaunchScreen.storyboard */,
+				1FAAF70722738DE4004F9608 /* Info.plist */,
+				1FAAF70822738DE4004F9608 /* main.m */,
+				1FAAF6FF22738DE2004F9608 /* WorkoutLog.xcdatamodeld */,
 			);
-			path = PushyApp;
+			path = WorkoutLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1FE3DA56220DB53A00EB5707 /* PushyApp */ = {
+		1FAAF6F222738DE2004F9608 /* WorkoutLog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FE3DA6D220DB53D00EB5707 /* Build configuration list for PBXNativeTarget "PushyApp" */;
+			buildConfigurationList = 1FAAF70C22738DE4004F9608 /* Build configuration list for PBXNativeTarget "WorkoutLog" */;
 			buildPhases = (
-				1FE3DA53220DB53A00EB5707 /* Sources */,
-				1FE3DA54220DB53A00EB5707 /* Frameworks */,
-				1FE3DA55220DB53A00EB5707 /* Resources */,
+				1FAAF6EF22738DE2004F9608 /* Sources */,
+				1FAAF6F022738DE2004F9608 /* Frameworks */,
+				1FAAF6F122738DE2004F9608 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PushyApp;
-			productName = PushyApp;
-			productReference = 1FE3DA57220DB53A00EB5707 /* PushyApp.app */;
+			name = WorkoutLog;
+			productName = WorkoutLog;
+			productReference = 1FAAF6F322738DE2004F9608 /* WorkoutLog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1FE3DA4F220DB53A00EB5707 /* Project object */ = {
+		1FAAF6EB22738DE2004F9608 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Tom Belov";
 				TargetAttributes = {
-					1FE3DA56220DB53A00EB5707 = {
+					1FAAF6F222738DE2004F9608 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 1FE3DA52220DB53A00EB5707 /* Build configuration list for PBXProject "PushyApp" */;
+			buildConfigurationList = 1FAAF6EE22738DE2004F9608 /* Build configuration list for PBXProject "WorkoutLog" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,55 +116,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 1FE3DA4E220DB53A00EB5707;
-			productRefGroup = 1FE3DA58220DB53A00EB5707 /* Products */;
+			mainGroup = 1FAAF6EA22738DE2004F9608;
+			productRefGroup = 1FAAF6F422738DE2004F9608 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1FE3DA56220DB53A00EB5707 /* PushyApp */,
+				1FAAF6F222738DE2004F9608 /* WorkoutLog */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1FE3DA55220DB53A00EB5707 /* Resources */ = {
+		1FAAF6F122738DE2004F9608 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE3DA67220DB53D00EB5707 /* LaunchScreen.storyboard in Resources */,
-				1FE3DA64220DB53D00EB5707 /* Assets.xcassets in Resources */,
-				1FE3DA62220DB53A00EB5707 /* Main.storyboard in Resources */,
+				1FAAF70622738DE4004F9608 /* LaunchScreen.storyboard in Resources */,
+				1FAAF70322738DE4004F9608 /* Assets.xcassets in Resources */,
+				1FAAF6FE22738DE2004F9608 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1FE3DA53220DB53A00EB5707 /* Sources */ = {
+		1FAAF6EF22738DE2004F9608 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE3DA5F220DB53A00EB5707 /* ViewController.m in Sources */,
-				1FE3DA6A220DB53D00EB5707 /* main.m in Sources */,
-				1FE3DA5C220DB53A00EB5707 /* AppDelegate.m in Sources */,
+				1FAAF70122738DE2004F9608 /* WorkoutLog.xcdatamodeld in Sources */,
+				1FAAF6FB22738DE2004F9608 /* ViewController.m in Sources */,
+				1FAAF70922738DE4004F9608 /* main.m in Sources */,
+				1FAAF6F822738DE2004F9608 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1FE3DA60220DB53A00EB5707 /* Main.storyboard */ = {
+		1FAAF6FC22738DE2004F9608 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1FE3DA61220DB53A00EB5707 /* Base */,
+				1FAAF6FD22738DE2004F9608 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1FE3DA65220DB53D00EB5707 /* LaunchScreen.storyboard */ = {
+		1FAAF70422738DE4004F9608 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1FE3DA66220DB53D00EB5707 /* Base */,
+				1FAAF70522738DE4004F9608 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -169,7 +173,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1FE3DA6B220DB53D00EB5707 /* Debug */ = {
+		1FAAF70A22738DE4004F9608 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -228,7 +232,7 @@
 			};
 			name = Debug;
 		};
-		1FE3DA6C220DB53D00EB5707 /* Release */ = {
+		1FAAF70B22738DE4004F9608 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,37 +285,37 @@
 			};
 			name = Release;
 		};
-		1FE3DA6E220DB53D00EB5707 /* Debug */ = {
+		1FAAF70D22738DE4004F9608 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
-				INFOPLIST_FILE = PushyApp/Info.plist;
+				INFOPLIST_FILE = WorkoutLog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tombelov.PushyApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tombelov.WorkoutLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1FE3DA6F220DB53D00EB5707 /* Release */ = {
+		1FAAF70E22738DE4004F9608 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
-				INFOPLIST_FILE = PushyApp/Info.plist;
+				INFOPLIST_FILE = WorkoutLog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tombelov.PushyApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tombelov.WorkoutLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,25 +324,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FE3DA52220DB53A00EB5707 /* Build configuration list for PBXProject "PushyApp" */ = {
+		1FAAF6EE22738DE2004F9608 /* Build configuration list for PBXProject "WorkoutLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FE3DA6B220DB53D00EB5707 /* Debug */,
-				1FE3DA6C220DB53D00EB5707 /* Release */,
+				1FAAF70A22738DE4004F9608 /* Debug */,
+				1FAAF70B22738DE4004F9608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FE3DA6D220DB53D00EB5707 /* Build configuration list for PBXNativeTarget "PushyApp" */ = {
+		1FAAF70C22738DE4004F9608 /* Build configuration list for PBXNativeTarget "WorkoutLog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FE3DA6E220DB53D00EB5707 /* Debug */,
-				1FE3DA6F220DB53D00EB5707 /* Release */,
+				1FAAF70D22738DE4004F9608 /* Debug */,
+				1FAAF70E22738DE4004F9608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1FAAF6FF22738DE2004F9608 /* WorkoutLog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1FAAF70022738DE2004F9608 /* WorkoutLog.xcdatamodel */,
+			);
+			currentVersion = 1FAAF70022738DE2004F9608 /* WorkoutLog.xcdatamodel */;
+			path = WorkoutLog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 1FE3DA4F220DB53A00EB5707 /* Project object */;
+	rootObject = 1FAAF6EB22738DE2004F9608 /* Project object */;
 }

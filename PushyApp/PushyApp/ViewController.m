@@ -16,7 +16,7 @@
 @implementation ViewController
 - (IBAction)scheduleButtonClicked:(id)sender {
     [self requestPermissionToNotify];
-    [self createNotification:5];
+    [self createNotification:15];
 }
 
 - (void) createNotification:(int)secondsInTheFuture {

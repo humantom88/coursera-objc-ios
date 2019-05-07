@@ -32,15 +32,15 @@
                                     <action selector="logoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGI-rP-2N5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="callBlack.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zzf-bB-qQD">
-                                <rect key="frame" x="27" y="173.5" width="320" height="320"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zzf-bB-qQD">
+                                <rect key="frame" x="20" y="166" width="335" height="335"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zzf-bB-qQD" secondAttribute="height" multiplier="1:1" id="qRN-fc-l2X"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCE-ne-IZP">
-                                <rect key="frame" x="161" y="538.5" width="53" height="30"/>
-                                <state key="normal" title="Refresh"/>
+                                <rect key="frame" x="168" y="546" width="39" height="30"/>
+                                <state key="normal" title="Fetch"/>
                                 <connections>
                                     <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQX-8V-OEi"/>
                                 </connections>
@@ -50,13 +50,13 @@
                         <constraints>
                             <constraint firstItem="yX4-mV-cvv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6HQ-ll-7JS"/>
                             <constraint firstItem="cXG-eN-ib5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CN2-4N-WWh"/>
-                            <constraint firstItem="zzf-bB-qQD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="ICK-sa-mVp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zzf-bB-qQD" secondAttribute="trailing" constant="28" id="Ko2-15-Jpa"/>
+                            <constraint firstItem="zzf-bB-qQD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CUv-fJ-gTk"/>
                             <constraint firstItem="FCE-ne-IZP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qc6-jk-YbQ"/>
                             <constraint firstItem="zzf-bB-qQD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qzz-cM-JTH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cXG-eN-ib5" secondAttribute="trailing" constant="20" id="aRP-IR-XBW"/>
                             <constraint firstItem="zzf-bB-qQD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bsW-wG-aNS"/>
                             <constraint firstItem="yX4-mV-cvv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cVK-HK-qGe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zzf-bB-qQD" secondAttribute="trailing" constant="20" id="lOD-iv-DSB"/>
                             <constraint firstItem="FCE-ne-IZP" firstAttribute="top" secondItem="zzf-bB-qQD" secondAttribute="bottom" constant="45" id="sLf-DT-Kec"/>
                             <constraint firstItem="zzf-bB-qQD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="svf-9C-4rv"/>
                             <constraint firstItem="zzf-bB-qQD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z0v-FC-AQU"/>
@@ -75,7 +75,4 @@
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="callBlack.jpg" width="2992" height="1698"/>
-    </resources>
 </document>
