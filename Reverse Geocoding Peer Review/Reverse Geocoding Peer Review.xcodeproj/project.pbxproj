@@ -7,117 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F03DA2B22201CBD00B4F71A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA2A22201CBD00B4F71A /* AppDelegate.m */; };
-		1F03DA2E22201CBD00B4F71A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA2D22201CBD00B4F71A /* ViewController.m */; };
-		1F03DA3122201CBD00B4F71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F03DA2F22201CBD00B4F71A /* Main.storyboard */; };
-		1F03DA3322201CBE00B4F71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F03DA3222201CBE00B4F71A /* Assets.xcassets */; };
-		1F03DA3622201CBE00B4F71A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F03DA3422201CBE00B4F71A /* LaunchScreen.storyboard */; };
-		1F03DA3922201CBE00B4F71A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA3822201CBE00B4F71A /* main.m */; };
-		1F3B483922D48FFE00657507 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B483822D48FFE00657507 /* MapKit.framework */; };
+		1F5327F322E36CF0002B241D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5327F222E36CF0002B241D /* AppDelegate.m */; };
+		1F5327F622E36CF0002B241D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5327F522E36CF0002B241D /* ViewController.m */; };
+		1F5327F922E36CF0002B241D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5327F722E36CF0002B241D /* Main.storyboard */; };
+		1F5327FB22E36CF2002B241D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5327FA22E36CF2002B241D /* Assets.xcassets */; };
+		1F5327FE22E36CF2002B241D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5327FC22E36CF2002B241D /* LaunchScreen.storyboard */; };
+		1F53280122E36CF2002B241D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F53280022E36CF2002B241D /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F03DA2622201CBD00B4F71A /* Reverse Geocode Live Demo 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reverse Geocode Live Demo 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F03DA2922201CBD00B4F71A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1F03DA2A22201CBD00B4F71A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F03DA2C22201CBD00B4F71A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F03DA2D22201CBD00B4F71A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1F03DA3022201CBD00B4F71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F03DA3222201CBE00B4F71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F03DA3522201CBE00B4F71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1F03DA3722201CBE00B4F71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F03DA3822201CBE00B4F71A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1F3B483822D48FFE00657507 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1F5327EE22E36CF0002B241D /* Reverse Geocoding Peer Review.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reverse Geocoding Peer Review.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5327F122E36CF0002B241D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F5327F222E36CF0002B241D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F5327F422E36CF0002B241D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F5327F522E36CF0002B241D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F5327F822E36CF0002B241D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F5327FA22E36CF2002B241D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F5327FD22E36CF2002B241D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F5327FF22E36CF2002B241D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F53280022E36CF2002B241D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F03DA2322201CBD00B4F71A /* Frameworks */ = {
+		1F5327EB22E36CF0002B241D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F3B483922D48FFE00657507 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F03DA1D22201CBD00B4F71A = {
+		1F5327E522E36CF0002B241D = {
 			isa = PBXGroup;
 			children = (
-				1F03DA2822201CBD00B4F71A /* Reverse Geocode Live Demo 01 */,
-				1F03DA2722201CBD00B4F71A /* Products */,
-				1F3B483722D48FFE00657507 /* Frameworks */,
+				1F5327F022E36CF0002B241D /* Reverse Geocoding Peer Review */,
+				1F5327EF22E36CF0002B241D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1F03DA2722201CBD00B4F71A /* Products */ = {
+		1F5327EF22E36CF0002B241D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F03DA2622201CBD00B4F71A /* Reverse Geocode Live Demo 01.app */,
+				1F5327EE22E36CF0002B241D /* Reverse Geocoding Peer Review.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F03DA2822201CBD00B4F71A /* Reverse Geocode Live Demo 01 */ = {
+		1F5327F022E36CF0002B241D /* Reverse Geocoding Peer Review */ = {
 			isa = PBXGroup;
 			children = (
-				1F03DA2922201CBD00B4F71A /* AppDelegate.h */,
-				1F03DA2A22201CBD00B4F71A /* AppDelegate.m */,
-				1F03DA2C22201CBD00B4F71A /* ViewController.h */,
-				1F03DA2D22201CBD00B4F71A /* ViewController.m */,
-				1F03DA2F22201CBD00B4F71A /* Main.storyboard */,
-				1F03DA3222201CBE00B4F71A /* Assets.xcassets */,
-				1F03DA3422201CBE00B4F71A /* LaunchScreen.storyboard */,
-				1F03DA3722201CBE00B4F71A /* Info.plist */,
-				1F03DA3822201CBE00B4F71A /* main.m */,
+				1F5327F122E36CF0002B241D /* AppDelegate.h */,
+				1F5327F222E36CF0002B241D /* AppDelegate.m */,
+				1F5327F422E36CF0002B241D /* ViewController.h */,
+				1F5327F522E36CF0002B241D /* ViewController.m */,
+				1F5327F722E36CF0002B241D /* Main.storyboard */,
+				1F5327FA22E36CF2002B241D /* Assets.xcassets */,
+				1F5327FC22E36CF2002B241D /* LaunchScreen.storyboard */,
+				1F5327FF22E36CF2002B241D /* Info.plist */,
+				1F53280022E36CF2002B241D /* main.m */,
 			);
-			path = "Reverse Geocode Live Demo 01";
-			sourceTree = "<group>";
-		};
-		1F3B483722D48FFE00657507 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1F3B483822D48FFE00657507 /* MapKit.framework */,
-			);
-			name = Frameworks;
+			path = "Reverse Geocoding Peer Review";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F03DA2522201CBD00B4F71A /* Reverse Geocode Live Demo 01 */ = {
+		1F5327ED22E36CF0002B241D /* Reverse Geocoding Peer Review */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F03DA3C22201CBE00B4F71A /* Build configuration list for PBXNativeTarget "Reverse Geocode Live Demo 01" */;
+			buildConfigurationList = 1F53280422E36CF2002B241D /* Build configuration list for PBXNativeTarget "Reverse Geocoding Peer Review" */;
 			buildPhases = (
-				1F03DA2222201CBD00B4F71A /* Sources */,
-				1F03DA2322201CBD00B4F71A /* Frameworks */,
-				1F03DA2422201CBD00B4F71A /* Resources */,
+				1F5327EA22E36CF0002B241D /* Sources */,
+				1F5327EB22E36CF0002B241D /* Frameworks */,
+				1F5327EC22E36CF0002B241D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Reverse Geocode Live Demo 01";
-			productName = "Reverse Geocode Live Demo 01";
-			productReference = 1F03DA2622201CBD00B4F71A /* Reverse Geocode Live Demo 01.app */;
+			name = "Reverse Geocoding Peer Review";
+			productName = "Reverse Geocoding Peer Review";
+			productReference = 1F5327EE22E36CF0002B241D /* Reverse Geocoding Peer Review.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1F03DA1E22201CBD00B4F71A /* Project object */ = {
+		1F5327E622E36CF0002B241D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Tom Belov";
 				TargetAttributes = {
-					1F03DA2522201CBD00B4F71A = {
-						CreatedOnToolsVersion = 10.1;
+					1F5327ED22E36CF0002B241D = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 1F03DA2122201CBD00B4F71A /* Build configuration list for PBXProject "Reverse Geocode Live Demo 01" */;
+			buildConfigurationList = 1F5327E922E36CF0002B241D /* Build configuration list for PBXProject "Reverse Geocoding Peer Review" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,55 +113,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 1F03DA1D22201CBD00B4F71A;
-			productRefGroup = 1F03DA2722201CBD00B4F71A /* Products */;
+			mainGroup = 1F5327E522E36CF0002B241D;
+			productRefGroup = 1F5327EF22E36CF0002B241D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F03DA2522201CBD00B4F71A /* Reverse Geocode Live Demo 01 */,
+				1F5327ED22E36CF0002B241D /* Reverse Geocoding Peer Review */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1F03DA2422201CBD00B4F71A /* Resources */ = {
+		1F5327EC22E36CF0002B241D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F03DA3622201CBE00B4F71A /* LaunchScreen.storyboard in Resources */,
-				1F03DA3322201CBE00B4F71A /* Assets.xcassets in Resources */,
-				1F03DA3122201CBD00B4F71A /* Main.storyboard in Resources */,
+				1F5327FE22E36CF2002B241D /* LaunchScreen.storyboard in Resources */,
+				1F5327FB22E36CF2002B241D /* Assets.xcassets in Resources */,
+				1F5327F922E36CF0002B241D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F03DA2222201CBD00B4F71A /* Sources */ = {
+		1F5327EA22E36CF0002B241D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F03DA2E22201CBD00B4F71A /* ViewController.m in Sources */,
-				1F03DA3922201CBE00B4F71A /* main.m in Sources */,
-				1F03DA2B22201CBD00B4F71A /* AppDelegate.m in Sources */,
+				1F5327F622E36CF0002B241D /* ViewController.m in Sources */,
+				1F53280122E36CF2002B241D /* main.m in Sources */,
+				1F5327F322E36CF0002B241D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1F03DA2F22201CBD00B4F71A /* Main.storyboard */ = {
+		1F5327F722E36CF0002B241D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1F03DA3022201CBD00B4F71A /* Base */,
+				1F5327F822E36CF0002B241D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1F03DA3422201CBE00B4F71A /* LaunchScreen.storyboard */ = {
+		1F5327FC22E36CF2002B241D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1F03DA3522201CBE00B4F71A /* Base */,
+				1F5327FD22E36CF2002B241D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,7 +169,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1F03DA3A22201CBE00B4F71A /* Debug */ = {
+		1F53280222E36CF2002B241D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -240,7 +228,7 @@
 			};
 			name = Debug;
 		};
-		1F03DA3B22201CBE00B4F71A /* Release */ = {
+		1F53280322E36CF2002B241D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,35 +281,35 @@
 			};
 			name = Release;
 		};
-		1F03DA3D22201CBE00B4F71A /* Debug */ = {
+		1F53280522E36CF2002B241D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
-				INFOPLIST_FILE = "Reverse Geocode Live Demo 01/Info.plist";
+				INFOPLIST_FILE = "Reverse Geocoding Peer Review/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tombelov.Reverse-Geocode-Live-Demo-01";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.company.Reverse-Geocoding-Peer-Review";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1F03DA3E22201CBE00B4F71A /* Release */ = {
+		1F53280622E36CF2002B241D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
-				INFOPLIST_FILE = "Reverse Geocode Live Demo 01/Info.plist";
+				INFOPLIST_FILE = "Reverse Geocoding Peer Review/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tombelov.Reverse-Geocode-Live-Demo-01";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.company.Reverse-Geocoding-Peer-Review";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F03DA2122201CBD00B4F71A /* Build configuration list for PBXProject "Reverse Geocode Live Demo 01" */ = {
+		1F5327E922E36CF0002B241D /* Build configuration list for PBXProject "Reverse Geocoding Peer Review" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F03DA3A22201CBE00B4F71A /* Debug */,
-				1F03DA3B22201CBE00B4F71A /* Release */,
+				1F53280222E36CF2002B241D /* Debug */,
+				1F53280322E36CF2002B241D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F03DA3C22201CBE00B4F71A /* Build configuration list for PBXNativeTarget "Reverse Geocode Live Demo 01" */ = {
+		1F53280422E36CF2002B241D /* Build configuration list for PBXNativeTarget "Reverse Geocoding Peer Review" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F03DA3D22201CBE00B4F71A /* Debug */,
-				1F03DA3E22201CBE00B4F71A /* Release */,
+				1F53280522E36CF2002B241D /* Debug */,
+				1F53280622E36CF2002B241D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1F03DA1E22201CBD00B4F71A /* Project object */;
+	rootObject = 1F5327E622E36CF0002B241D /* Project object */;
 }

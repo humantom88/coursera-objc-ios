@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx version="1.1" creator="Xcode">
+    <wpt lat="34.449126" lon="-119.664057">
+        <time>2019-07-20:00:00:00Z</time>
+    </wpt>
+    <wpt lat="34.448791" lon="-119.662244">
+        <time>2019-07-20:00:00:30Z</time>
+    </wpt>
+    <wpt lat="34.448844" lon="-119.661954">
+        <time>2019-07-20:00:01:00Z</time>
+    </wpt>
+    <wpt lat="34.449578" lon="-119.660591">
+        <time>2019-07-20:00:01:30Z</time>
+    </wpt>
+    <wpt lat="34.447738" lon="-119.659819">
+        <time>2019-07-20:00:01:45Z</time>
+    </wpt>
+    <wpt lat="34.448145" lon="-119.664518">
+        <time>2019-07-20:00:02:00Z</time>
+    </wpt>
+</gpx>

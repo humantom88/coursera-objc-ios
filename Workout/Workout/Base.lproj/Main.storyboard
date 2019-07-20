@@ -149,7 +149,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4UH-I0-eDJ">
-                                                <rect key="frame" x="94" y="0.0" width="320" height="69"/>
+                                                <rect key="frame" x="94" y="0.0" width="320" height="68.5"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="578947285.49113905">
                                                     <!--2019-05-07 18:41:25 +0000-->
                                                 </date>
@@ -202,7 +202,7 @@
                     <connections>
                         <outlet property="exerciseTextField" destination="D3e-nb-JJs" id="0qm-r7-CzI"/>
                         <outlet property="exercisesLogLabel" destination="vSg-1c-fHs" id="S20-8Z-Caa"/>
-                        <outlet property="reoeatsTextField" destination="8LO-5n-SE5" id="wdn-Tp-FO9"/>
+                        <outlet property="repeatsTextField" destination="8LO-5n-SE5" id="Uft-zC-A9t"/>
                         <outlet property="timesTextFIeld" destination="WOT-cg-Emh" id="cjR-PP-NTg"/>
                         <outlet property="weightTextField" destination="U87-1s-T6B" id="obL-h7-Umx"/>
                         <outlet property="whenDatePicker" destination="4UH-I0-eDJ" id="XIT-Cg-dlt"/>

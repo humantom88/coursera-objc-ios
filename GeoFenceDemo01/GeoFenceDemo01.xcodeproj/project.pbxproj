@@ -7,78 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F03DA2B22201CBD00B4F71A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA2A22201CBD00B4F71A /* AppDelegate.m */; };
-		1F03DA2E22201CBD00B4F71A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA2D22201CBD00B4F71A /* ViewController.m */; };
-		1F03DA3122201CBD00B4F71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F03DA2F22201CBD00B4F71A /* Main.storyboard */; };
-		1F03DA3322201CBE00B4F71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F03DA3222201CBE00B4F71A /* Assets.xcassets */; };
-		1F03DA3622201CBE00B4F71A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F03DA3422201CBE00B4F71A /* LaunchScreen.storyboard */; };
-		1F03DA3922201CBE00B4F71A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03DA3822201CBE00B4F71A /* main.m */; };
-		1F3B483922D48FFE00657507 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B483822D48FFE00657507 /* MapKit.framework */; };
+		1F50CD0422DA59F200F798EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F50CD0322DA59F200F798EC /* AppDelegate.m */; };
+		1F50CD0722DA59F200F798EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F50CD0622DA59F200F798EC /* ViewController.m */; };
+		1F50CD0A22DA59F200F798EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50CD0822DA59F200F798EC /* Main.storyboard */; };
+		1F50CD0C22DA59F400F798EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F50CD0B22DA59F400F798EC /* Assets.xcassets */; };
+		1F50CD0F22DA59F400F798EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50CD0D22DA59F400F798EC /* LaunchScreen.storyboard */; };
+		1F50CD1222DA59F400F798EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F50CD1122DA59F400F798EC /* main.m */; };
+		1F50CD1A22DA5A0D00F798EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F50CD1922DA5A0D00F798EC /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F03DA2622201CBD00B4F71A /* Reverse Geocode Live Demo 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reverse Geocode Live Demo 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F03DA2922201CBD00B4F71A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1F03DA2A22201CBD00B4F71A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F03DA2C22201CBD00B4F71A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F03DA2D22201CBD00B4F71A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1F03DA3022201CBD00B4F71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F03DA3222201CBE00B4F71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F03DA3522201CBE00B4F71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1F03DA3722201CBE00B4F71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F03DA3822201CBE00B4F71A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1F3B483822D48FFE00657507 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1F50CCFF22DA59F200F798EC /* GeoFenceDemo01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoFenceDemo01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F50CD0222DA59F200F798EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F50CD0322DA59F200F798EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F50CD0522DA59F200F798EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F50CD0622DA59F200F798EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F50CD0922DA59F200F798EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F50CD0B22DA59F400F798EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F50CD0E22DA59F400F798EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F50CD1022DA59F400F798EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F50CD1122DA59F400F798EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F50CD1922DA5A0D00F798EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1F5960C022E276D000B59F5D /* track.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = track.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F03DA2322201CBD00B4F71A /* Frameworks */ = {
+		1F50CCFC22DA59F200F798EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F3B483922D48FFE00657507 /* MapKit.framework in Frameworks */,
+				1F50CD1A22DA5A0D00F798EC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F03DA1D22201CBD00B4F71A = {
+		1F50CCF622DA59F200F798EC = {
 			isa = PBXGroup;
 			children = (
-				1F03DA2822201CBD00B4F71A /* Reverse Geocode Live Demo 01 */,
-				1F03DA2722201CBD00B4F71A /* Products */,
-				1F3B483722D48FFE00657507 /* Frameworks */,
+				1F5960C022E276D000B59F5D /* track.gpx */,
+				1F50CD0122DA59F200F798EC /* GeoFenceDemo01 */,
+				1F50CD0022DA59F200F798EC /* Products */,
+				1F50CD1822DA5A0C00F798EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		1F03DA2722201CBD00B4F71A /* Products */ = {
+		1F50CD0022DA59F200F798EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F03DA2622201CBD00B4F71A /* Reverse Geocode Live Demo 01.app */,
+				1F50CCFF22DA59F200F798EC /* GeoFenceDemo01.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F03DA2822201CBD00B4F71A /* Reverse Geocode Live Demo 01 */ = {
+		1F50CD0122DA59F200F798EC /* GeoFenceDemo01 */ = {
 			isa = PBXGroup;
 			children = (
-				1F03DA2922201CBD00B4F71A /* AppDelegate.h */,
-				1F03DA2A22201CBD00B4F71A /* AppDelegate.m */,
-				1F03DA2C22201CBD00B4F71A /* ViewController.h */,
-				1F03DA2D22201CBD00B4F71A /* ViewController.m */,
-				1F03DA2F22201CBD00B4F71A /* Main.storyboard */,
-				1F03DA3222201CBE00B4F71A /* Assets.xcassets */,
-				1F03DA3422201CBE00B4F71A /* LaunchScreen.storyboard */,
-				1F03DA3722201CBE00B4F71A /* Info.plist */,
-				1F03DA3822201CBE00B4F71A /* main.m */,
+				1F50CD0222DA59F200F798EC /* AppDelegate.h */,
+				1F50CD0322DA59F200F798EC /* AppDelegate.m */,
+				1F50CD0522DA59F200F798EC /* ViewController.h */,
+				1F50CD0622DA59F200F798EC /* ViewController.m */,
+				1F50CD0822DA59F200F798EC /* Main.storyboard */,
+				1F50CD0B22DA59F400F798EC /* Assets.xcassets */,
+				1F50CD0D22DA59F400F798EC /* LaunchScreen.storyboard */,
+				1F50CD1022DA59F400F798EC /* Info.plist */,
+				1F50CD1122DA59F400F798EC /* main.m */,
 			);
-			path = "Reverse Geocode Live Demo 01";
+			path = GeoFenceDemo01;
 			sourceTree = "<group>";
 		};
-		1F3B483722D48FFE00657507 /* Frameworks */ = {
+		1F50CD1822DA5A0C00F798EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F3B483822D48FFE00657507 /* MapKit.framework */,
+				1F50CD1922DA5A0D00F798EC /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,38 +88,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F03DA2522201CBD00B4F71A /* Reverse Geocode Live Demo 01 */ = {
+		1F50CCFE22DA59F200F798EC /* GeoFenceDemo01 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F03DA3C22201CBE00B4F71A /* Build configuration list for PBXNativeTarget "Reverse Geocode Live Demo 01" */;
+			buildConfigurationList = 1F50CD1522DA59F400F798EC /* Build configuration list for PBXNativeTarget "GeoFenceDemo01" */;
 			buildPhases = (
-				1F03DA2222201CBD00B4F71A /* Sources */,
-				1F03DA2322201CBD00B4F71A /* Frameworks */,
-				1F03DA2422201CBD00B4F71A /* Resources */,
+				1F50CCFB22DA59F200F798EC /* Sources */,
+				1F50CCFC22DA59F200F798EC /* Frameworks */,
+				1F50CCFD22DA59F200F798EC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Reverse Geocode Live Demo 01";
-			productName = "Reverse Geocode Live Demo 01";
-			productReference = 1F03DA2622201CBD00B4F71A /* Reverse Geocode Live Demo 01.app */;
+			name = GeoFenceDemo01;
+			productName = GeoFenceDemo01;
+			productReference = 1F50CCFF22DA59F200F798EC /* GeoFenceDemo01.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1F03DA1E22201CBD00B4F71A /* Project object */ = {
+		1F50CCF722DA59F200F798EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Tom Belov";
 				TargetAttributes = {
-					1F03DA2522201CBD00B4F71A = {
-						CreatedOnToolsVersion = 10.1;
+					1F50CCFE22DA59F200F798EC = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 1F03DA2122201CBD00B4F71A /* Build configuration list for PBXProject "Reverse Geocode Live Demo 01" */;
+			buildConfigurationList = 1F50CCFA22DA59F200F798EC /* Build configuration list for PBXProject "GeoFenceDemo01" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,55 +127,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 1F03DA1D22201CBD00B4F71A;
-			productRefGroup = 1F03DA2722201CBD00B4F71A /* Products */;
+			mainGroup = 1F50CCF622DA59F200F798EC;
+			productRefGroup = 1F50CD0022DA59F200F798EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F03DA2522201CBD00B4F71A /* Reverse Geocode Live Demo 01 */,
+				1F50CCFE22DA59F200F798EC /* GeoFenceDemo01 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1F03DA2422201CBD00B4F71A /* Resources */ = {
+		1F50CCFD22DA59F200F798EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F03DA3622201CBE00B4F71A /* LaunchScreen.storyboard in Resources */,
-				1F03DA3322201CBE00B4F71A /* Assets.xcassets in Resources */,
-				1F03DA3122201CBD00B4F71A /* Main.storyboard in Resources */,
+				1F50CD0F22DA59F400F798EC /* LaunchScreen.storyboard in Resources */,
+				1F50CD0C22DA59F400F798EC /* Assets.xcassets in Resources */,
+				1F50CD0A22DA59F200F798EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1F03DA2222201CBD00B4F71A /* Sources */ = {
+		1F50CCFB22DA59F200F798EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F03DA2E22201CBD00B4F71A /* ViewController.m in Sources */,
-				1F03DA3922201CBE00B4F71A /* main.m in Sources */,
-				1F03DA2B22201CBD00B4F71A /* AppDelegate.m in Sources */,
+				1F50CD0722DA59F200F798EC /* ViewController.m in Sources */,
+				1F50CD1222DA59F400F798EC /* main.m in Sources */,
+				1F50CD0422DA59F200F798EC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1F03DA2F22201CBD00B4F71A /* Main.storyboard */ = {
+		1F50CD0822DA59F200F798EC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1F03DA3022201CBD00B4F71A /* Base */,
+				1F50CD0922DA59F200F798EC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1F03DA3422201CBE00B4F71A /* LaunchScreen.storyboard */ = {
+		1F50CD0D22DA59F400F798EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1F03DA3522201CBE00B4F71A /* Base */,
+				1F50CD0E22DA59F400F798EC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,7 +183,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1F03DA3A22201CBE00B4F71A /* Debug */ = {
+		1F50CD1322DA59F400F798EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -240,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		1F03DA3B22201CBE00B4F71A /* Release */ = {
+		1F50CD1422DA59F400F798EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,35 +295,37 @@
 			};
 			name = Release;
 		};
-		1F03DA3D22201CBE00B4F71A /* Debug */ = {
+		1F50CD1622DA59F400F798EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
-				INFOPLIST_FILE = "Reverse Geocode Live Demo 01/Info.plist";
+				INFOPLIST_FILE = GeoFenceDemo01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tombelov.Reverse-Geocode-Live-Demo-01";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.company.GeoFenceDemo01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1F03DA3E22201CBE00B4F71A /* Release */ = {
+		1F50CD1722DA59F400F798EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
-				INFOPLIST_FILE = "Reverse Geocode Live Demo 01/Info.plist";
+				INFOPLIST_FILE = GeoFenceDemo01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tombelov.Reverse-Geocode-Live-Demo-01";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.company.GeoFenceDemo01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,25 +334,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F03DA2122201CBD00B4F71A /* Build configuration list for PBXProject "Reverse Geocode Live Demo 01" */ = {
+		1F50CCFA22DA59F200F798EC /* Build configuration list for PBXProject "GeoFenceDemo01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F03DA3A22201CBE00B4F71A /* Debug */,
-				1F03DA3B22201CBE00B4F71A /* Release */,
+				1F50CD1322DA59F400F798EC /* Debug */,
+				1F50CD1422DA59F400F798EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F03DA3C22201CBE00B4F71A /* Build configuration list for PBXNativeTarget "Reverse Geocode Live Demo 01" */ = {
+		1F50CD1522DA59F400F798EC /* Build configuration list for PBXNativeTarget "GeoFenceDemo01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F03DA3D22201CBE00B4F71A /* Debug */,
-				1F03DA3E22201CBE00B4F71A /* Release */,
+				1F50CD1622DA59F400F798EC /* Debug */,
+				1F50CD1722DA59F400F798EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1F03DA1E22201CBD00B4F71A /* Project object */;
+	rootObject = 1F50CCF722DA59F200F798EC /* Project object */;
 }
