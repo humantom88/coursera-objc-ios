@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdl-T9-9Fp">
+                                <rect key="frame" x="161.5" y="60" width="91" height="30"/>
+                                <state key="normal" title="Play Sound A"/>
+                                <connections>
+                                    <action selector="playSoundATapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GY1-9j-FUl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdW-kM-lxw">
+                                <rect key="frame" x="161.5" y="106" width="91" height="30"/>
+                                <state key="normal" title="Play Sound B"/>
+                                <connections>
+                                    <action selector="playSoundBTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGY-9y-2Ea"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sdl-T9-9Fp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="DQd-v6-UrE"/>
+                            <constraint firstItem="mdW-kM-lxw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ujb-pF-WlA"/>
+                            <constraint firstItem="sdl-T9-9Fp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XjX-Lg-HWq"/>
+                            <constraint firstItem="mdW-kM-lxw" firstAttribute="top" secondItem="sdl-T9-9Fp" secondAttribute="bottom" constant="16" id="iui-Bo-pth"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playSoundA" destination="sdl-T9-9Fp" id="utk-Dd-7GH"/>
+                        <outlet property="playSoundB" destination="mdW-kM-lxw" id="jJr-HX-g2n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

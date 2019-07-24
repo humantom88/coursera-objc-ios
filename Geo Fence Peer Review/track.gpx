@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx
+    xmlns="http://www.topografix.com/GPX/1/1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+    version="1.1"
+    creator="gpx-poi.com">
+    <wpt lat="59.198480" lon="39.874597">
+        <time>2019-07-20:00:00:00Z</time>
+    </wpt>
+    
+    <wpt lat="59.197629" lon="39.873696">
+        <time>2019-07-20:00:01:00Z</time>
+    </wpt>
+    
+    <wpt lat="59.196842" lon="39.872838">
+        <time>2019-07-20:00:02:00Z</time>
+    </wpt>
+    <wpt lat="59.196199" lon="39.872188">
+        <time>2019-07-20:00:05:00Z</time>
+    </wpt>
+    <wpt lat="59.196804" lon="39.870037">
+        <time>2019-07-20:00:07:00Z</time>
+    </wpt>
+    <wpt lat="59.197906" lon="39.866897">
+        <time>2019-07-20:00:00:00Z</time>
+    </wpt>
+    <wpt lat="59.198335" lon="39.865359">
+        <time>2019-07-20:00:00:00Z</time>
+    </wpt>
+    <wpt lat="59.198698" lon="39.864071">
+        <time>2019-07-20:00:00:00Z</time>
+    </wpt>
+    <wpt lat="59.199089" lon="39.863292">
+        <time>2019-07-20:00:15:00Z</time>
+    </wpt>
+    <wpt lat="59.196852" lon="39.860856">
+        <time>2019-07-20:00:25:00Z</time>
+    </wpt>
+    <wpt lat="59.197168" lon="39.859624">
+        <time>2019-07-20:00:30:00Z</time>
+    </wpt>
+</gpx>
