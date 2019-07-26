@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import <AudioToolbox/AudioToolbox.h>
+@import AudioToolbox;
+@import AVFoundation.AVFAudio.AVAudioPlayer;
 
 @interface ViewController ()
 
@@ -15,6 +16,8 @@
 @property (assign, nonatomic) SystemSoundID beepB;
 @property (assign, nonatomic) BOOL beepAGood;
 @property (assign, nonatomic) BOOL beepBGood;
+@property (assign, nonatomic) BOOL songGood;
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end
 
@@ -28,6 +31,9 @@
     
     NSString *soundBPath = [[NSBundle mainBundle] pathForResource:@"soundB" ofType:@"aif"];
     NSURL *urlB = [NSURL fileURLWithPath:soundBPath];
+    
+    NSString *drumsTrackPath = [[NSBundle mainBundle] pathForResource:@"Drums" ofType:@"m4a"];
+    NSURL *songUrl = [NSURL fileURLWithPath:drumsTrackPath];
     
     OSStatus statusReportA = AudioServicesCreateSystemSoundID((__bridge CFURLRef)urlA, &_beepA);
     
@@ -48,6 +54,17 @@
         UIAlertController *alertB = [UIAlertController alertControllerWithTitle:@"Couldn't load beep" message:@"BeepB problem" preferredStyle:UIAlertControllerStyleAlert];
         [self presentViewController:alertB animated:YES completion:nil];
     }
+    
+    NSError *error;
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:songUrl error:&error];
+    
+    if (!self.audioPlayer) {
+        self.songGood = NO;
+        UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"Couldn't load file m4a" message:[error localizedDescription] preferredStyle:UIAlertControllerStyleAlert];
+        [self presentViewController:alertC animated:YES completion:nil];
+    } else {
+        self.songGood = YES;
+    }
 }
 
 - (IBAction)playSoundATapped:(id)sender {
@@ -62,6 +79,18 @@
         return;
     }
     AudioServicesPlaySystemSound(_beepB);
+}
+
+- (IBAction)playMediaTapped:(id)sender {
+    if (self.songGood) {
+        [self.audioPlayer play];
+    }
+}
+
+- (IBAction)stopPlayingMediaTapped:(id)sender {
+    if (self.songGood) {
+        [self.audioPlayer stop];
+    }
 }
 
 - (void)dealloc {

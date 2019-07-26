@@ -32,13 +32,31 @@
                                     <action selector="playSoundBTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGY-9y-2Ea"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSh-xu-Uki">
+                                <rect key="frame" x="169.5" y="152" width="75" height="30"/>
+                                <state key="normal" title="Play Media"/>
+                                <connections>
+                                    <action selector="playMediaTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EEh-sy-lzs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO3-pb-ZnI">
+                                <rect key="frame" x="141" y="198" width="132" height="30"/>
+                                <state key="normal" title="Stop Playing Media"/>
+                                <connections>
+                                    <action selector="stopPlayingMediaTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aP1-33-646"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vSh-xu-Uki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DQT-9J-LPl"/>
                             <constraint firstItem="sdl-T9-9Fp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="DQd-v6-UrE"/>
                             <constraint firstItem="mdW-kM-lxw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ujb-pF-WlA"/>
+                            <constraint firstItem="vSh-xu-Uki" firstAttribute="top" secondItem="mdW-kM-lxw" secondAttribute="bottom" constant="16" id="XZI-xk-1D6"/>
                             <constraint firstItem="sdl-T9-9Fp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XjX-Lg-HWq"/>
+                            <constraint firstItem="JO3-pb-ZnI" firstAttribute="top" secondItem="vSh-xu-Uki" secondAttribute="bottom" constant="16" id="Yqh-u1-RnL"/>
                             <constraint firstItem="mdW-kM-lxw" firstAttribute="top" secondItem="sdl-T9-9Fp" secondAttribute="bottom" constant="16" id="iui-Bo-pth"/>
+                            <constraint firstItem="JO3-pb-ZnI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xFj-4N-kFo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

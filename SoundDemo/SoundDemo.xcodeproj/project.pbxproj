@@ -16,6 +16,7 @@
 		1F5328CF22E8DBAE002B241D /* soundA.aif in Resources */ = {isa = PBXBuildFile; fileRef = 1F5328CE22E8DB31002B241D /* soundA.aif */; };
 		1F5328D022E8DBB2002B241D /* soundB.aif in Resources */ = {isa = PBXBuildFile; fileRef = 1F5328CD22E8DB30002B241D /* soundB.aif */; };
 		1F5328D722E8DFC0002B241D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5328D622E8DFC0002B241D /* AudioToolbox.framework */; };
+		1F5328DA22E8EE98002B241D /* Drums.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1F5328D922E8EE98002B241D /* Drums.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1F5328D222E8DCF8002B241D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		1F5328D422E8DD10002B241D /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		1F5328D622E8DFC0002B241D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1F5328D922E8EE98002B241D /* Drums.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Drums.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				1F5328CE22E8DB31002B241D /* soundA.aif */,
 				1F5328CD22E8DB30002B241D /* soundB.aif */,
+				1F5328D922E8EE98002B241D /* Drums.m4a */,
 			);
 			name = sounds;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				1F5328D022E8DBB2002B241D /* soundB.aif in Resources */,
 				1F5328C422E4EDE5002B241D /* LaunchScreen.storyboard in Resources */,
+				1F5328DA22E8EE98002B241D /* Drums.m4a in Resources */,
 				1F5328C122E4EDE5002B241D /* Assets.xcassets in Resources */,
 				1F5328CF22E8DBAE002B241D /* soundA.aif in Resources */,
 				1F5328BF22E4EDE3002B241D /* Main.storyboard in Resources */,
