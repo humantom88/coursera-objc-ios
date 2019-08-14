@@ -39,7 +39,7 @@
     request.entity = [NSEntityDescription entityForName: @"ToDoEntity"
                                  inManagedObjectContext:self.managedObjectContext];
     request.predicate = [NSPredicate predicateWithFormat:@"TRUEPREDICATE"];
-    request.sortDescriptors = @[[[NSSortDescriptor alloc]initWithKey:@"toDoDueDate" ascending:YES]];
+    request.sortDescriptors = @[[[NSSortDescriptor alloc]initWithKey:@"lastUpdateDateTime" ascending:NO]];
     
     self.resultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
                                                                  managedObjectContext:self.managedObjectContext

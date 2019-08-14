@@ -17,6 +17,6 @@
 
 @dynamic toDoTitle;
 @dynamic toDoDetails;
-@dynamic toDoDueDate;
+@dynamic lastUpdateDateTime;
 
 @end

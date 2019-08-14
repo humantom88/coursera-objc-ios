@@ -24,7 +24,7 @@
     self.toDoTitleLabel.text = incomingToDoEntity.toDoTitle;
     self.localToDoEntity = incomingToDoEntity;
 
-    self.toDoDueDateLabel.text = [dateFormatter stringFromDate:incomingToDoEntity.toDoDueDate];
+    self.toDoDueDateLabel.text = [dateFormatter stringFromDate:incomingToDoEntity.lastUpdateDateTime];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

@@ -11,8 +11,8 @@
 @interface MyUIViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
-@property (weak, nonatomic) IBOutlet UIDatePicker *dueDatePicker;
-@property (weak, nonatomic) IBOutlet UITextView *detailsField;
+@property (weak, nonatomic) IBOutlet UIDatePicker *createdAtPicker;
+@property (weak, nonatomic) IBOutlet UITextView *commentsField;
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) ToDoEntity *localToDoEntity;
@@ -33,12 +33,12 @@
     self.wasDeleted = NO;
     
     self.titleField.text = self.localToDoEntity.toDoTitle;
-    self.detailsField.text = self.localToDoEntity.toDoDetails;
+    self.commentsField.text = self.localToDoEntity.toDoDetails;
     
-    NSDate *dueDate = self.localToDoEntity.toDoDueDate;
+    NSDate *dueDate = self.localToDoEntity.lastUpdateDateTime;
     if (dueDate != nil)
     {
-        [self.dueDatePicker setDate:dueDate];
+        [self.createdAtPicker setDate:dueDate];
     }
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -51,7 +51,7 @@
 {
     if([notification object] == self)
     {
-        self.localToDoEntity.toDoDetails = self.detailsField.text;
+        self.localToDoEntity.toDoDetails = self.commentsField.text;
         [self saveMyToDoEntity];
     }
 }
@@ -90,11 +90,14 @@
 - (IBAction)titleFieldEdited:(id)sender
 {
     self.localToDoEntity.toDoTitle = self.titleField.text;
+	NSDate *newDate = [NSDate new];
+	self.localToDoEntity.lastUpdateDateTime = newDate;
+	self.createdAtPicker.date = newDate;
     [self saveMyToDoEntity];
 }
 - (IBAction)dueDateEdited:(id)sender
 {
-    self.localToDoEntity.toDoDueDate = self.dueDatePicker.date;
+    self.localToDoEntity.lastUpdateDateTime = self.createdAtPicker.date;
     [self saveMyToDoEntity];
 }
 
@@ -112,8 +115,8 @@
 
 - (void) saveEverything
 {
-    self.localToDoEntity.toDoDetails = self.detailsField.text;
-    self.localToDoEntity.toDoDueDate = self.dueDatePicker.date;
+    self.localToDoEntity.toDoDetails = self.commentsField.text;
+    self.localToDoEntity.lastUpdateDateTime = self.createdAtPicker.date;
     self.localToDoEntity.toDoTitle = self.titleField.text;
     
     [self saveMyToDoEntity];

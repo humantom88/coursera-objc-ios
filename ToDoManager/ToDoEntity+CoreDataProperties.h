@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, copy) NSString *toDoTitle;
 @property (nullable, nonatomic, copy) NSString *toDoDetails;
-@property (nullable, nonatomic, copy) NSDate *toDoDueDate;
+@property (nullable, nonatomic, copy) NSDate *lastUpdateDateTime;
 
 @end
 
