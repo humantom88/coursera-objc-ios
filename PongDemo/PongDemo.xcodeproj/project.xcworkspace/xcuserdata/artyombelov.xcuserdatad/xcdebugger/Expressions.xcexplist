@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[GameScene touchesBegan:withEvent:]:GameScene.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.bounds">
+            </PersistentString>
+            <PersistentString
+               value = "self.frame.size.width">
+            </PersistentString>
+            <PersistentString
+               value = "self.frame.size">
+            </PersistentString>
+            <PersistentString
+               value = "self.frame.size.width * 0.7">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

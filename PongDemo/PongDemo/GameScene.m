@@ -20,7 +20,10 @@
 	SKLabelNode *_label;
 }
 
-- (void)didMoveToView:(SKView *)view {
+static const CGFloat kTrackPixelsPerSecond = 1000;
+
+- (void)didMoveToView:(SKView *)view
+{
 	self.backgroundColor = [SKColor blackColor];
 	self.scaleMode = SKSceneScaleModeAspectFit;
 	self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
@@ -28,29 +31,8 @@
 	ball.physicsBody.angularVelocity = 1.0;
 }
 
-
-- (void)touchDownAtPoint:(CGPoint)pos {
-	SKShapeNode *n = [_spinnyNode copy];
-	n.position = pos;
-	n.strokeColor = [SKColor greenColor];
-	[self addChild:n];
-}
-
-- (void)touchMovedToPoint:(CGPoint)pos {
-	SKShapeNode *n = [_spinnyNode copy];
-	n.position = pos;
-	n.strokeColor = [SKColor blueColor];
-	[self addChild:n];
-}
-
-- (void)touchUpAtPoint:(CGPoint)pos {
-	SKShapeNode *n = [_spinnyNode copy];
-	n.position = pos;
-	n.strokeColor = [SKColor redColor];
-	[self addChild:n];
-}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
 	// Run 'Pulse' action from 'Actions.sks'
 	[_label runAction:[SKAction actionNamed:@"Pulse"] withKey:@"fadeInOut"];
 
@@ -58,30 +40,74 @@
 		CGPoint p = [touch locationInNode:self];
 		NSLog(@"\n %f %f %f %f", p.x, p.y, self.frame.size.width, self.frame.size.height);
 
-		if (p.x < self.scene.size.width * 0.3) {
+		if (p.x < self.frame.size.height * 0.3) {
 			self.leftPaddleMotivatingTouch = touch;
 			NSLog(@"Left");
-		} else if (p.x > self.scene.size.width * 0.7) {
+		} else if (p.x > self.frame.size.height * 0.7) {
 			self.rightPaddleMotivatingTouch = touch;
 			NSLog(@"Right");
 		} else {
 			SKNode *ball = [self childNodeWithName:@"ball"];
 			ball.physicsBody.velocity = CGVectorMake(ball.physicsBody.velocity.dx * 2.0, ball.physicsBody.velocity.dy);
 		}
+
+		[self trackPaddlesNoMotivatingTouches];
 	}
 }
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-	// for (UITouch *t in touches) {[self touchMovedToPoint:[t locationInNode:self]];}
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[self trackPaddlesNoMotivatingTouches];
 }
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-	// for (UITouch *t in touches) {[self touchUpAtPoint:[t locationInNode:self]];}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[self clearTouches:touches];
 }
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-	// for (UITouch *t in touches) {[self touchUpAtPoint:[t locationInNode:self]];}
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[self clearTouches:touches];
+}
+
+- (void)clearTouches:(NSSet *)touches
+{
+	if ([touches containsObject:self.leftPaddleMotivatingTouch])
+	{
+		self.leftPaddleMotivatingTouch = nil;
+	}
+
+	if ([touches containsObject:self.rightPaddleMotivatingTouch])
+	{
+		self.rightPaddleMotivatingTouch = nil;
+	}
+}
+
+- (void)trackPaddlesNoMotivatingTouches
+{
+	id a = @[@{@"node": [self childNodeWithName:@"leftPaddle"],
+			   @"touch": self.leftPaddleMotivatingTouch ?: [NSNull null]},
+			 @{@"node": [self childNodeWithName:@"rightPaddle"],
+			   @"touch": self.rightPaddleMotivatingTouch ?: [NSNull null]}];
+	for (NSDictionary *o in a)
+	{
+		SKNode *node = o[@"node"];
+		UITouch *touch = o[@"touch"];
+
+		if ([[NSNull null] isEqual:touch])
+		{
+			continue;
+		}
+
+		CGFloat yPos = [touch locationInNode:self].y;
+		NSTimeInterval duration = ABS(yPos - node.position.y) / kTrackPixelsPerSecond;
+
+		SKAction *moveAction = [SKAction moveToY:yPos duration:duration];
+		[node runAction:moveAction withKey:@"moving!"];
+
+	}
 }
 
 
--(void)update:(CFTimeInterval)currentTime {
+-(void)update:(CFTimeInterval)currentTime
+{
 	// Called before each frame is rendered
 }
 
