@@ -11,8 +11,10 @@
 
 @implementation GameStart
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-	if (touches){
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+	if (touches)
+	{
 		SKView *skView = (SKView *)self.view;
 
 		GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];

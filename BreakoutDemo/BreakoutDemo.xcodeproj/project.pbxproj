@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F86E726231A4F4D0053698A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F86E725231A4F4D0053698A /* Assets.xcassets */; };
 		64E0FB442303F0A300128051 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0FB432303F0A300128051 /* AppDelegate.m */; };
 		64E0FB482303F0A300128051 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 64E0FB472303F0A300128051 /* Actions.sks */; };
 		64E0FB4B2303F0A400128051 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0FB4A2303F0A400128051 /* GameScene.m */; };
 		64E0FB4E2303F0A400128051 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0FB4D2303F0A400128051 /* GameViewController.m */; };
 		64E0FB512303F0A400128051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E0FB4F2303F0A400128051 /* Main.storyboard */; };
-		64E0FB532303F0A600128051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E0FB522303F0A600128051 /* Assets.xcassets */; };
 		64E0FB562303F0A600128051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E0FB542303F0A600128051 /* LaunchScreen.storyboard */; };
 		64E0FB592303F0A600128051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0FB582303F0A600128051 /* main.m */; };
 		64E0FB612303F61800128051 /* GameStart.sks in Resources */ = {isa = PBXBuildFile; fileRef = 64E0FB602303F61800128051 /* GameStart.sks */; };
@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F86E725231A4F4D0053698A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E0FB3F2303F0A300128051 /* BreakoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E0FB422303F0A300128051 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64E0FB432303F0A300128051 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		64E0FB4C2303F0A400128051 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		64E0FB4D2303F0A400128051 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		64E0FB502303F0A400128051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		64E0FB522303F0A600128051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E0FB552303F0A600128051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E0FB572303F0A600128051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E0FB582303F0A600128051 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,9 +82,9 @@
 				64E0FB4C2303F0A400128051 /* GameViewController.h */,
 				64E0FB4D2303F0A400128051 /* GameViewController.m */,
 				64E0FB4F2303F0A400128051 /* Main.storyboard */,
-				64E0FB522303F0A600128051 /* Assets.xcassets */,
 				64E0FB542303F0A600128051 /* LaunchScreen.storyboard */,
 				64E0FB572303F0A600128051 /* Info.plist */,
+				1F86E725231A4F4D0053698A /* Assets.xcassets */,
 				64E0FB582303F0A600128051 /* main.m */,
 			);
 			path = BreakoutDemo;
@@ -190,8 +190,8 @@
 				64E0FB512303F0A400128051 /* Main.storyboard in Resources */,
 				64E0FB632303F63500128051 /* GameOver.sks in Resources */,
 				64E0FB612303F61800128051 /* GameStart.sks in Resources */,
-				64E0FB532303F0A600128051 /* Assets.xcassets in Resources */,
 				64E0FB6E2303F88600128051 /* GameScene.sks in Resources */,
+				1F86E726231A4F4D0053698A /* Assets.xcassets in Resources */,
 				64E0FB562303F0A600128051 /* LaunchScreen.storyboard in Resources */,
 				64E0FB482303F0A300128051 /* Actions.sks in Resources */,
 			);
