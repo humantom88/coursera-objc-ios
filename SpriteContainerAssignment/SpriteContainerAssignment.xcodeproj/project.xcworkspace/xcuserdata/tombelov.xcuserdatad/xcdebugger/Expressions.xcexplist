@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[GameScene touchesBegan:withEvent:]:GameScene.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "region">
+            </PersistentString>
+            <PersistentString
+               value = "p">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GameScene touchesEnded:withEvent:]:GameScene.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "touches[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
