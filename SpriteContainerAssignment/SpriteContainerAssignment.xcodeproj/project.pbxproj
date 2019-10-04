@@ -13,9 +13,9 @@
 		1F0BDB80234536A800752CE5 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDB7F234536A800752CE5 /* GameScene.m */; };
 		1F0BDB83234536A800752CE5 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDB82234536A800752CE5 /* GameViewController.m */; };
 		1F0BDB86234536A800752CE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0BDB84234536A800752CE5 /* Main.storyboard */; };
-		1F0BDB88234536AA00752CE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0BDB87234536AA00752CE5 /* Assets.xcassets */; };
 		1F0BDB8B234536AA00752CE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F0BDB89234536AA00752CE5 /* LaunchScreen.storyboard */; };
 		1F0BDB8E234536AA00752CE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BDB8D234536AA00752CE5 /* main.m */; };
+		642A5FDA23470DAE00D8A2AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642A5FD923470DAE00D8A2AB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +29,10 @@
 		1F0BDB81234536A800752CE5 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		1F0BDB82234536A800752CE5 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		1F0BDB85234536A800752CE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F0BDB87234536AA00752CE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F0BDB8A234536AA00752CE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F0BDB8C234536AA00752CE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F0BDB8D234536AA00752CE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		642A5FD923470DAE00D8A2AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 				1F0BDB81234536A800752CE5 /* GameViewController.h */,
 				1F0BDB82234536A800752CE5 /* GameViewController.m */,
 				1F0BDB84234536A800752CE5 /* Main.storyboard */,
-				1F0BDB87234536AA00752CE5 /* Assets.xcassets */,
 				1F0BDB89234536AA00752CE5 /* LaunchScreen.storyboard */,
+				642A5FD923470DAE00D8A2AB /* Assets.xcassets */,
 				1F0BDB8C234536AA00752CE5 /* Info.plist */,
 				1F0BDB8D234536AA00752CE5 /* main.m */,
 			);
@@ -141,9 +141,9 @@
 			files = (
 				1F0BDB86234536A800752CE5 /* Main.storyboard in Resources */,
 				1F0BDB7B234536A800752CE5 /* GameScene.sks in Resources */,
-				1F0BDB88234536AA00752CE5 /* Assets.xcassets in Resources */,
 				1F0BDB8B234536AA00752CE5 /* LaunchScreen.storyboard in Resources */,
 				1F0BDB7D234536A800752CE5 /* Actions.sks in Resources */,
+				642A5FDA23470DAE00D8A2AB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +297,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
 				INFOPLIST_FILE = SpriteContainerAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,9 +316,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M6NNRGL8Y;
 				INFOPLIST_FILE = SpriteContainerAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
