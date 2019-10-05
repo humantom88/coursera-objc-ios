@@ -8,6 +8,7 @@
 
 #import "GameOver.h"
 #import "GameScene.h"
+#import "GameWon.h"
 
 static const CGFloat kTrackPointsPerSecond = 1000;
 
@@ -19,6 +20,7 @@ static const uint32_t category_ball		= 0x1 << 1;
 @interface GameScene () <SKPhysicsContactDelegate>
 
 @property (nonatomic, strong, nullable) UITouch *motivatingTouch;
+@property (nonatomic, copy) NSMutableArray *blockFrames;
 
 @end
 
