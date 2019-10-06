@@ -24,10 +24,7 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 @end
 
-@implementation GameScene {
-    SKShapeNode *_spinnyNode;
-    SKLabelNode *_label;
-}
+@implementation GameScene
 
 - (void)didMoveToView:(SKView *)view {
 	self.name = @"Fence";
@@ -36,19 +33,24 @@ static const uint32_t category_ball		= 0x1 << 1;
 	self.physicsBody.categoryBitMask = category_fence;
 	self.physicsBody.collisionBitMask = 0x0;
 	self.physicsBody.contactTestBitMask = 0x0;
+
 	self.physicsWorld.contactDelegate = self;
 
 	SKSpriteNode *background = (SKSpriteNode *)[self childNodeWithName:@"Background"];
 	background.zPosition = 0;
+	background.lightingBitMask - 0x1;
 
-	SKSpriteNode *ball1 = [self createBallWithX:60
-										   andY:60
-								   	andVelocity:CGVectorMake(200.0, 200.0)
-										andName:@"ball1"];
-	SKSpriteNode *ball2 = [self createBallWithX:60
-										   andY:75
-								   	andVelocity:CGVectorMake(0.0, 10.0)
-										andName:@"ball2"];
+	SKSpriteNode *ball1 = [self createBallWithX:60 andY:60 andVelocity:CGVectorMake(200.0, 200.0) andName:@"ball1"];
+	SKSpriteNode *ball2 = [self createBallWithX:60 andY:75 andVelocity:CGVectorMake(0.0, 10.0) andName:@"ball2"];
+
+	SKLightNode *light = [SKLightNode new];
+	light.categoryBitMask = 0x1;
+	light.falloff = 1;
+	light.ambientColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
+	light.lightColor = [UIColor colorWithRed:0.7 green:0.7 blue:1.0 alpha:1.0];
+	light.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+	light.zPosition = 1;
+	[ball1 addChild:light];
 
 	SKSpriteNode *paddle = [self createPaddle];
 
@@ -67,8 +69,19 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	[self.scene.physicsWorld addJoint:joint];
 
+	self.blockFrames = [NSMutableArray array];
+	SKTextureAtlas *blockAnimation = [SKTextureAtlas atlasNamed:@"block.atlas"];
+	unsigned long numImages = blockAnimation.textureNames.count;
+	for (int i = 0; i < numImages; i++) {
+		NSString *textureName = [NSString stringWithFormat:@"%02d", i];
+		SKTexture *temp = [blockAnimation textureNamed:textureName];
+		[self.blockFrames addObject:temp];
+	}
+
 	// Add blocks
-	SKSpriteNode *node = [SKSpriteNode spriteNodeWithImageNamed:@"block.png"];
+	// SKSpriteNode *node = [SKSpriteNode spriteNodeWithImageNamed:@"block.png"];
+	SKSpriteNode *node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[0]];
+	node.scale = 0.2;
 
 	CGFloat kBlockWidth = node.size.width;
 	CGFloat kBlockHeight = node.size.height;
@@ -80,15 +93,16 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	for (int i = 0; i < kBlocksPerRow; i++)
 	{
+		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i]];
+		node.scale = 0.2;
 
-		node = [SKSpriteNode spriteNodeWithImageNamed:@"block.png"];
 		node.name = @"Block";
-		node.position = CGPointMake(
-									kBlockHorizSpace / 2 +
+		node.position = CGPointMake(kBlockHorizSpace / 2 +
 									kBlockWidth / 2 +
 									i * kBlockWidth +
 									i * kBlockHorizSpace, self.size.height - 100.0);
 		node.zPosition = 1;
+		node.lightingBitMask = 0x1;
 		node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:node.size center:CGPointMake(0, 0)];
 		node.physicsBody.dynamic = NO;
 		node.physicsBody.friction = 0.0;
@@ -112,12 +126,15 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	for (int i = 0; i < kBlocksPerRow; i++)
 	{
-		node = [SKSpriteNode spriteNodeWithImageNamed:@"block.png"];
+		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i]];
+		node.scale = 0.2;
+
 		node.name = @"Block";
 		node.position = CGPointMake(kBlockHorizSpace + kBlockWidth + i * kBlockWidth +
 									i * kBlockHorizSpace,
 									self.size.height - 100.0 - (1.5 * kBlockHeight));
 		node.zPosition = 1;
+		node.lightingBitMask = 0x1;
 		node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:node.size center:CGPointMake(0, 0)];
 		node.physicsBody.dynamic = NO;
 		node.physicsBody.friction = 0.0;
@@ -141,15 +158,18 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	for (int i = 0; i < kBlocksPerRow; i++)
 	{
-		node = [SKSpriteNode spriteNodeWithImageNamed:@"block.png"];
+		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i]];
+		node.scale = 0.2;
+
 		node.name = @"Block";
 		node.position = CGPointMake(
 									kBlockHorizSpace / 2 +
 									kBlockWidth / 2 +
 									i * kBlockWidth +
 									i * kBlockHorizSpace,
-									self.size.height - 100.0 - (3.0 * kBlockHeight));
+									self.size.height - 100.0 - (2.0 * kBlockHeight));
 		node.zPosition = 1;
+		node.lightingBitMask = 0x1;
 		node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:node.size center:CGPointMake(0, 0)];
 		node.physicsBody.dynamic = NO;
 		node.physicsBody.friction = 0.0;
@@ -216,24 +236,12 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 
 - (void)touchDownAtPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor greenColor];
-    [self addChild:n];
 }
 
 - (void)touchMovedToPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor blueColor];
-    [self addChild:n];
 }
 
 - (void)touchUpAtPoint:(CGPoint)pos {
-    SKShapeNode *n = [_spinnyNode copy];
-    n.position = pos;
-    n.strokeColor = [SKColor redColor];
-    [self addChild:n];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
