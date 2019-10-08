@@ -10,5 +10,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "-[GameScene didMoveToView:]:GameScene.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self frame]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

@@ -13,6 +13,7 @@
 		1F8F1A622348CED500395D09 /* ParticleBlock.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F1A602348CED500395D09 /* ParticleBlock.sks */; };
 		1F8F1A632348CED500395D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F1A612348CED500395D09 /* Assets.xcassets */; };
 		1F8F1A652348D0B900395D09 /* ParticleRampUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F1A642348D0B900395D09 /* ParticleRampUp.sks */; };
+		1F8F1A7C234D0B0500395D09 /* block.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1F8F1A7B234D0B0500395D09 /* block.atlas */; };
 		64E0FB442303F0A300128051 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0FB432303F0A300128051 /* AppDelegate.m */; };
 		64E0FB482303F0A300128051 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 64E0FB472303F0A300128051 /* Actions.sks */; };
 		64E0FB4B2303F0A400128051 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0FB4A2303F0A400128051 /* GameScene.m */; };
@@ -39,6 +40,7 @@
 		1F8F1A602348CED500395D09 /* ParticleBlock.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ParticleBlock.sks; sourceTree = "<group>"; };
 		1F8F1A612348CED500395D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F8F1A642348D0B900395D09 /* ParticleRampUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ParticleRampUp.sks; sourceTree = "<group>"; };
+		1F8F1A7B234D0B0500395D09 /* block.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = block.atlas; path = ../../../../../../Desktop/block.atlas; sourceTree = "<group>"; };
 		64E0FB3F2303F0A300128051 /* BreakoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E0FB422303F0A300128051 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64E0FB432303F0A300128051 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		64E0FB412303F0A300128051 /* BreakoutDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F8F1A7B234D0B0500395D09 /* block.atlas */,
 				1F8F1A5F2348CE4300395D09 /* Sounds */,
 				64E0FB5F2303F5FE00128051 /* Scenes */,
 				64E0FB422303F0A300128051 /* AppDelegate.h */,
@@ -237,6 +240,7 @@
 				64E0FB612303F61800128051 /* GameStart.sks in Resources */,
 				64E0FB6E2303F88600128051 /* GameScene.sks in Resources */,
 				1F86E726231A4F4D0053698A /* Assets.xcassets in Resources */,
+				1F8F1A7C234D0B0500395D09 /* block.atlas in Resources */,
 				64E0FB562303F0A600128051 /* LaunchScreen.storyboard in Resources */,
 				64E0FB482303F0A300128051 /* Actions.sks in Resources */,
 			);

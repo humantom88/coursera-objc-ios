@@ -12,9 +12,9 @@
 
 static const CGFloat kTrackPointsPerSecond = 1000;
 
-static const uint32_t category_fence	= 0x1 << 3;
-static const uint32_t category_paddle	= 0x1 << 2;
-static const uint32_t category_block	= 0x1 << 1;
+static const uint32_t category_fence	= 0x1 << 4;
+static const uint32_t category_paddle	= 0x1 << 3;
+static const uint32_t category_block	= 0x1 << 2;
 static const uint32_t category_ball		= 0x1 << 1;
 
 @interface GameScene () <SKPhysicsContactDelegate>
@@ -29,27 +29,22 @@ static const uint32_t category_ball		= 0x1 << 1;
 - (void)didMoveToView:(SKView *)view {
 	self.name = @"Fence";
 
-	self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
-	self.physicsBody.categoryBitMask = category_fence;
-	self.physicsBody.collisionBitMask = 0x0;
-	self.physicsBody.contactTestBitMask = 0x0;
-
-	self.physicsWorld.contactDelegate = self;
+	[self createPhysicsBody];
 
 	SKSpriteNode *background = (SKSpriteNode *)[self childNodeWithName:@"Background"];
+	background.size = self.frame.size;
 	background.zPosition = 0;
-	background.lightingBitMask - 0x1;
+	background.lightingBitMask = 0x1;
 
-	SKSpriteNode *ball1 = [self createBallWithX:60 andY:60 andVelocity:CGVectorMake(200.0, 200.0) andName:@"ball1"];
-	SKSpriteNode *ball2 = [self createBallWithX:60 andY:75 andVelocity:CGVectorMake(0.0, 10.0) andName:@"ball2"];
+	SKSpriteNode *ball1 = [self createBallWithX:60
+										   andY:200
+									andVelocity:CGVectorMake(50.0, 50.0) andName:@"ball1"];
 
-	SKLightNode *light = [SKLightNode new];
-	light.categoryBitMask = 0x1;
-	light.falloff = 1;
-	light.ambientColor = [UIColor colorWithRed:0.5 green:0.5 blue:0.5 alpha:1.0];
-	light.lightColor = [UIColor colorWithRed:0.7 green:0.7 blue:1.0 alpha:1.0];
-	light.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
-	light.zPosition = 1;
+	SKSpriteNode *ball2 = [self createBallWithX:60
+										   andY:250
+									andVelocity:CGVectorMake(0.0, 10.0) andName:@"ball2"];
+
+	SKLightNode *light = [self createLight];
 	[ball1 addChild:light];
 
 	SKSpriteNode *paddle = [self createPaddle];
@@ -69,23 +64,14 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	[self.scene.physicsWorld addJoint:joint];
 
-	self.blockFrames = [NSMutableArray array];
-	SKTextureAtlas *blockAnimation = [SKTextureAtlas atlasNamed:@"block.atlas"];
-	unsigned long numImages = blockAnimation.textureNames.count;
-	for (int i = 0; i < numImages; i++) {
-		NSString *textureName = [NSString stringWithFormat:@"%02d", i];
-		SKTexture *temp = [blockAnimation textureNamed:textureName];
-		[self.blockFrames addObject:temp];
-	}
+	[self createBlockAnimationFrames];
 
 	// Add blocks
-	// SKSpriteNode *node = [SKSpriteNode spriteNodeWithImageNamed:@"block.png"];
-	SKSpriteNode *node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[0]];
-	node.scale = 0.2;
+	SKSpriteNode *node;
 
-	CGFloat kBlockWidth = node.size.width;
-	CGFloat kBlockHeight = node.size.height;
-	CGFloat kBlockHorizSpace = 20.0f;
+	CGFloat kBlockWidth = 80;
+	CGFloat kBlockHeight = 30;
+	CGFloat kBlockHorizSpace = 30.0f;
 
 	// Top Row Blocks
 
@@ -93,9 +79,8 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	for (int i = 0; i < kBlocksPerRow; i++)
 	{
-		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i]];
-		node.scale = 0.2;
-
+		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i % 10]];
+		node.size = CGSizeMake(kBlockWidth, kBlockHeight);
 		node.name = @"Block";
 		node.position = CGPointMake(kBlockHorizSpace / 2 +
 									kBlockWidth / 2 +
@@ -126,8 +111,8 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	for (int i = 0; i < kBlocksPerRow; i++)
 	{
-		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i]];
-		node.scale = 0.2;
+		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i % 10]];
+		node.size = CGSizeMake(kBlockWidth, kBlockHeight);
 
 		node.name = @"Block";
 		node.position = CGPointMake(kBlockHorizSpace + kBlockWidth + i * kBlockWidth +
@@ -158,8 +143,8 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	for (int i = 0; i < kBlocksPerRow; i++)
 	{
-		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i]];
-		node.scale = 0.2;
+		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i % 10]];
+		node.size = CGSizeMake(kBlockWidth, kBlockHeight);
 
 		node.name = @"Block";
 		node.position = CGPointMake(
@@ -167,7 +152,7 @@ static const uint32_t category_ball		= 0x1 << 1;
 									kBlockWidth / 2 +
 									i * kBlockWidth +
 									i * kBlockHorizSpace,
-									self.size.height - 100.0 - (2.0 * kBlockHeight));
+									self.size.height - 100.0 - (3.0 * kBlockHeight));
 		node.zPosition = 1;
 		node.lightingBitMask = 0x1;
 		node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:node.size center:CGPointMake(0, 0)];
@@ -187,6 +172,56 @@ static const uint32_t category_ball		= 0x1 << 1;
 		[self addChild:node];
 	}
 
+}
+
+
+#pragma mark - Private methods
+
+- (void)createPhysicsBody
+{
+	self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
+	self.physicsBody.categoryBitMask = category_fence;
+	self.physicsBody.collisionBitMask = 0x0;
+	self.physicsBody.contactTestBitMask = 0x0;
+
+	self.physicsWorld.contactDelegate = self;
+
+}
+
+- (SKLightNode *)createLight
+{
+	SKLightNode *light = [SKLightNode new];
+	light.categoryBitMask = 0x1;
+	light.falloff = 1;
+	light.ambientColor = [UIColor colorWithRed:0.5
+										 green:0.5
+										  blue:0.5
+										 alpha:1.0];
+	light.lightColor = [UIColor colorWithRed:0.7
+									   green:0.7
+										blue:1.0
+									   alpha:1.0];
+	light.shadowColor = [UIColor colorWithRed:0.0
+										green:0.0
+										 blue:0.0
+										alpha:1.0];
+	light.zPosition = 1;
+
+	return light;
+}
+
+- (void)createBlockAnimationFrames
+{
+	NSMutableArray *someArray = [[NSMutableArray alloc] init];
+
+	SKTextureAtlas *blockAnimation = [SKTextureAtlas atlasNamed:@"block.atlas"];
+	unsigned long numImages = blockAnimation.textureNames.count;
+	for (int i = 0; i < numImages; i++) {
+		NSString *textureName = [NSString stringWithFormat:@"block%02d", i];
+		SKTexture *temp = [blockAnimation textureNamed:textureName];
+		[someArray addObject:temp];
+	}
+	self.blockFrames = someArray;
 }
 
 - (SKSpriteNode *)createPaddle
@@ -218,7 +253,7 @@ static const uint32_t category_ball		= 0x1 << 1;
 	ball.name = name;
 	ball.position = CGPointMake(x, y);
 	ball.size = CGSizeMake(50, 50);
-	ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:ball.size.width / 2];
+	ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:(ball.size.width / 2)];
 	ball.physicsBody.dynamic = YES;
 	ball.physicsBody.friction = 0.0;
 	ball.physicsBody.restitution = 1.0;
@@ -234,16 +269,6 @@ static const uint32_t category_ball		= 0x1 << 1;
 	return ball;
 }
 
-
-- (void)touchDownAtPoint:(CGPoint)pos {
-}
-
-- (void)touchMovedToPoint:(CGPoint)pos {
-}
-
-- (void)touchUpAtPoint:(CGPoint)pos {
-}
-
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	const CGRect region = CGRectMake(0, 0, self.size.width, self.size.height);
     for (UITouch *touch in touches) {
@@ -255,14 +280,17 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	[self trackPaddlesToMotivatingTouches];
 }
+
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 	[self trackPaddlesToMotivatingTouches];
 }
+
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	if ([touches containsObject:self.motivatingTouch]) {
 		self.motivatingTouch = nil;
 	}
 }
+
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
 	if ([touches containsObject:self.motivatingTouch]) {
 		self.motivatingTouch = nil;
@@ -313,7 +341,13 @@ static const uint32_t category_ball		= 0x1 << 1;
 	NSString *nameA = contact.bodyA.node.name;
 	NSString *nameB = contact.bodyB.node.name;
 
-	if (([nameA containsString:@"Fence"] && [nameB containsString:@"Ball"]) || ([nameA containsString:@"Ball"] && [nameB containsString:@"Fence"])) {
+	if (([nameA containsString:@"Block"] && [nameB containsString:@"Ball"]) || ([nameA containsString:@"Ball"] && [nameB containsString:@"Block"])) {
+		SKAction *blockAudio = [SKAction playSoundFileNamed:@"sound_explode.m4a" waitForCompletion:NO];
+		[self runAction:blockAudio];
+	} else if (([nameA containsString:@"Paddle"] && [nameB containsString:@"Ball"]) || ([nameA containsString:@"Ball"] && [nameB containsString:@"Paddle"])) {
+		SKAction *paddleAudio = [SKAction playSoundFileNamed:@"sound_paddle.m4a" waitForCompletion:NO];
+		[self runAction:paddleAudio];
+	} else if (([nameA containsString:@"Fence"] && [nameB containsString:@"Ball"]) || ([nameA containsString:@"Ball"] && [nameB containsString:@"Fence"])) {
 		if (contact.contactPoint.y < 10)
 		{
 			SKView *view = (SKView *)self.view;
@@ -323,6 +357,9 @@ static const uint32_t category_ball		= 0x1 << 1;
 			scene.scaleMode = SKSceneScaleModeAspectFill;
 
 			[view presentScene:scene];
+		} else {
+			SKAction *fenceAudio = [SKAction playSoundFileNamed:@"sound_wall.m4a" waitForCompletion:NO];
+			[self runAction:fenceAudio];
 		}
 	}
 	NSLog(@"What collided? %@, %@", nameA, nameB);
