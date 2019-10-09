@@ -395,15 +395,38 @@ static const uint32_t category_ball		= 0x1 << 1;
 		SKAction *paddleAudio = [SKAction playSoundFileNamed:@"sound_paddle.m4a" waitForCompletion:NO];
 		[self runAction:paddleAudio];
 	} else if (([nameA containsString:@"Fence"] && [nameB containsString:@"Ball"]) || ([nameA containsString:@"Ball"] && [nameB containsString:@"Fence"])) {
+		SKNode *ball;
+		if ([nameA containsString:@"Ball"]) {
+			ball = contact.bodyA.node;
+		} else {
+			ball = contact.bodyB.node;
+		}
+
 		if (contact.contactPoint.y < 10)
 		{
-			SKView *view = (SKView *)self.view;
+			SKAction *actionAudioExplode = [SKAction playSoundFileNamed:@"sound_explode.m4a" waitForCompletion:NO];
+			NSString *particleExplosionPath = [[NSBundle mainBundle]pathForResource:@"ParticleBlock" ofType:@"sks"];
 
-			[self removeFromParent];
-			GameOver *scene = [GameOver nodeWithFileNamed:@"GameOver"];
-			scene.scaleMode = SKSceneScaleModeAspectFill;
+			SKEmitterNode *particleExplosion = [NSKeyedUnarchiver unarchiveObjectWithFile:particleExplosionPath];
+			particleExplosion.position = CGPointMake(0, 0);
+			particleExplosion.zPosition = 2;
+			particleExplosion.targetNode = self;
+			SKAction *actionParticleExplosion = [SKAction runBlock:^{
+				[ball addChild:particleExplosion];
+			}];
+			SKAction *actionRemoveBall = [SKAction removeFromParent];
+			SKAction *switchScene = [SKAction runBlock:^{
+				SKView *skView = (SKView *)self.view;
+				[self removeFromParent];
 
-			[view presentScene:scene];
+				GameOver *scene = [GameOver nodeWithFileNamed:@"GameOver"];
+				scene.scaleMode = SKSceneScaleModeAspectFill;
+
+				[skView presentScene:scene];
+			}];
+
+			SKAction *actionExplodeSequence = [SKAction sequence:@[actionAudioExplode, actionParticleExplosion, [SKAction fadeInWithDuration:0.2], actionRemoveBall, switchScene]];
+			[ball runAction:actionExplodeSequence];
 		} else {
 			SKAction *fenceAudio = [SKAction playSoundFileNamed:@"sound_wall.m4a" waitForCompletion:NO];
 			[self runAction:fenceAudio];
