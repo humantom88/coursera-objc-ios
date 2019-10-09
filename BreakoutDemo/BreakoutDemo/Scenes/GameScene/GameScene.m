@@ -38,11 +38,11 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	SKSpriteNode *ball1 = [self createBallWithX:60
 										   andY:200
-									andVelocity:CGVectorMake(50.0, 50.0) andName:@"ball1"];
+									andVelocity:CGVectorMake(50.0, 50.0) andName:@"Ball1"];
 
 	SKSpriteNode *ball2 = [self createBallWithX:60
 										   andY:250
-									andVelocity:CGVectorMake(0.0, 10.0) andName:@"ball2"];
+									andVelocity:CGVectorMake(0.0, 10.0) andName:@"Ball2"];
 
 	SKLightNode *light = [self createLight];
 	[ball1 addChild:light];
@@ -79,7 +79,7 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	for (int i = 0; i < kBlocksPerRow; i++)
 	{
-		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i % 10]];
+		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[0]];
 		node.size = CGSizeMake(kBlockWidth, kBlockHeight);
 		node.name = @"Block";
 		node.position = CGPointMake(kBlockHorizSpace / 2 +
@@ -111,7 +111,7 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	for (int i = 0; i < kBlocksPerRow; i++)
 	{
-		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i % 10]];
+		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[0]];
 		node.size = CGSizeMake(kBlockWidth, kBlockHeight);
 
 		node.name = @"Block";
@@ -143,7 +143,7 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 	for (int i = 0; i < kBlocksPerRow; i++)
 	{
-		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[i % 10]];
+		node = [SKSpriteNode spriteNodeWithTexture:self.blockFrames[0]];
 		node.size = CGSizeMake(kBlockWidth, kBlockHeight);
 
 		node.name = @"Block";
@@ -185,7 +185,6 @@ static const uint32_t category_ball		= 0x1 << 1;
 	self.physicsBody.contactTestBitMask = 0x0;
 
 	self.physicsWorld.contactDelegate = self;
-
 }
 
 - (SKLightNode *)createLight
@@ -318,14 +317,16 @@ static const uint32_t category_ball		= 0x1 << 1;
 	SKNode *ball1 = [self childNodeWithName:@"Ball1"];
 	SKNode *ball2 = [self childNodeWithName:@"Ball2"];
 
+	float speedball1 = sqrt(ball1.physicsBody.velocity.dx * ball1.physicsBody.velocity.dx + ball1.physicsBody.velocity.dy * ball1.physicsBody.velocity.dy);
+
 	float dx = (ball1.physicsBody.velocity.dx + ball2.physicsBody.velocity.dx) / 2;
 	float dy = (ball1.physicsBody.velocity.dy + ball2.physicsBody.velocity.dy) / 2;
 
 	float speed = sqrt(dx*dx + dy*dy);
-	if (speed <= kMaxSpeed) {
+	if ((speedball1 > kMaxSpeed) || (speed > kMaxSpeed)) {
 		ball1.physicsBody.linearDamping += 0.1f;
 		ball2.physicsBody.linearDamping += 0.1f;
-	} else if (speed < kMinSpeed) {
+	} else if ((speedball1 < kMinSpeed) || (speed < kMinSpeed)) {
 		ball1.physicsBody.linearDamping -= 0.1f;
 		ball2.physicsBody.linearDamping -= 0.1f;
 	} else {
@@ -342,8 +343,54 @@ static const uint32_t category_ball		= 0x1 << 1;
 	NSString *nameB = contact.bodyB.node.name;
 
 	if (([nameA containsString:@"Block"] && [nameB containsString:@"Ball"]) || ([nameA containsString:@"Ball"] && [nameB containsString:@"Block"])) {
-		SKAction *blockAudio = [SKAction playSoundFileNamed:@"sound_explode.m4a" waitForCompletion:NO];
-		[self runAction:blockAudio];
+		SKNode *block;
+		if([nameA containsString:@"Block"]) {
+			block = contact.bodyA.node;
+		} else {
+			block = contact.bodyB.node;
+		}
+		SKAction *actionAudioRamp = [SKAction playSoundFileNamed:@"sound_block.m4a" waitForCompletion:NO];
+		SKAction *actionVisualRamp = [SKAction animateWithTextures:self.blockFrames timePerFrame:0.04 resize:NO restore:NO];
+		NSString *particleRampPath = [[NSBundle mainBundle] pathForResource:@"ParticleRampUp" ofType:@"sks"];
+		SKEmitterNode *particleRamp = [NSKeyedUnarchiver unarchiveObjectWithFile:particleRampPath];
+		particleRamp.position = CGPointMake(0, 0);
+		particleRamp.zPosition = 0;
+		SKAction *actionParticleRamp = [SKAction runBlock:^{
+			[block addChild:particleRamp];
+		}];
+
+		// Group
+		SKAction *actionRampGroup = [SKAction group:@[actionAudioRamp, actionParticleRamp, actionVisualRamp]];
+
+		SKAction *actionAudioExplode = [SKAction playSoundFileNamed:@"sound_explode.m4a"
+												  waitForCompletion:NO];
+
+		NSString *particleExplosionPath = [[NSBundle mainBundle] pathForResource:@"ParticleBlock" ofType:@"sks"];
+
+		SKEmitterNode *particleExplosion = [NSKeyedUnarchiver unarchiveObjectWithFile:particleExplosionPath];
+
+		particleExplosion.position = CGPointMake(0, 0);
+		particleExplosion.zPosition = 2;
+		SKAction *actionParticleExplosion = [SKAction runBlock:^{
+			[block addChild:particleExplosion];
+		}];
+
+		SKAction *actionRemoveBlock = [SKAction removeFromParent];
+
+		SKAction *actionExplodeSequence = [SKAction sequence:@[actionAudioExplode, actionParticleExplosion, [SKAction fadeInWithDuration:1]]];
+
+		SKAction *checkGameOver = [SKAction runBlock:^{
+			BOOL anyBlocksRemaining = [self childNodeWithName:@"Block"] != nil;
+			if (!anyBlocksRemaining) {
+				SKView *skView = (SKView *)self.view;
+				[self removeFromParent];
+
+				GameWon *scene = [GameWon nodeWithFileNamed:@"GameWon"];
+				scene.scaleMode = SKSceneScaleModeAspectFit;
+				[skView presentScene:scene];
+			}
+		}];
+		[block runAction:[SKAction sequence:@[actionRampGroup, actionExplodeSequence, actionRemoveBlock, checkGameOver]]];
 	} else if (([nameA containsString:@"Paddle"] && [nameB containsString:@"Ball"]) || ([nameA containsString:@"Ball"] && [nameB containsString:@"Paddle"])) {
 		SKAction *paddleAudio = [SKAction playSoundFileNamed:@"sound_paddle.m4a" waitForCompletion:NO];
 		[self runAction:paddleAudio];
