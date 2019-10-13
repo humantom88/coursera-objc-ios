@@ -80,8 +80,8 @@ static const uint32_t category_ball		= 0x1 << 1;
 	ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:(ball.size.width / 2)];
 	ball.physicsBody.dynamic = YES;
 	ball.physicsBody.friction = 0.0;
-	ball.physicsBody.restitution = 1.0;
-	ball.physicsBody.linearDamping = 2.0;
+	ball.physicsBody.restitution = 0.95;
+	ball.physicsBody.linearDamping = 0.2;
 	ball.physicsBody.angularDamping = 0.0;
 	ball.physicsBody.allowsRotation = YES;
 	ball.physicsBody.mass = 1.0;
@@ -96,7 +96,6 @@ static const uint32_t category_ball		= 0x1 << 1;
 
 - (void)didBeginContact:(SKPhysicsContact *)contact {
 	NSString *nameA = contact.bodyA.node.name;
-	NSString *nameB = contact.bodyB.node.name;
 
 	SKNode *ball, *fence;
 
@@ -111,7 +110,14 @@ static const uint32_t category_ball		= 0x1 << 1;
 	NSString *particleRampPath = [[NSBundle mainBundle] pathForResource:@"BallFall" ofType:@"sks"];
 	SKEmitterNode *particleRamp = [NSKeyedUnarchiver unarchiveObjectWithFile:particleRampPath];
 
-	particleRamp.position = CGPointMake(ball.position.x, 0);
+
+	if (contact.contactPoint.x != ball.position.x) {
+		particleRamp.position = CGPointMake(contact.contactPoint.x, ball.position.y);
+	} else  {
+		particleRamp.position = CGPointMake(ball.position.x, ball.position.y);
+	}
+
+	// particleRamp.position = CGPointMake(ball.position.x, fence.position.y);
 	particleRamp.zPosition = 1;
 	SKAction *actionAudioExplode = [SKAction playSoundFileNamed:@"sound_fence.m4a"
 											  waitForCompletion:NO];
@@ -119,29 +125,15 @@ static const uint32_t category_ball		= 0x1 << 1;
 		[fence addChild:particleRamp];
 	}];
 
-	[fence runAction:[SKAction sequence:@[actionAudioExplode, actionParticleRamp, [SKAction fadeInWithDuration:1]]]];
+	SKAction *actionRemoveParticleRamp = [SKAction runBlock:^{
+		[particleRamp removeFromParent];
+	}];
+
+	[fence runAction:[SKAction sequence:@[actionAudioExplode, actionParticleRamp, [SKAction fadeInWithDuration:1], actionRemoveParticleRamp]]];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
     // Called before each frame is rendered
-	static const int kMaxSpeed = 500;
-	static const int kMinSpeed = 0;
-
-	SKNode *ball = [self childNodeWithName:@"Ball"];
-
-	float speedball = sqrt(ball.physicsBody.velocity.dx * ball.physicsBody.velocity.dx +
-						   ball.physicsBody.velocity.dy * ball.physicsBody.velocity.dy);
-
-	float dx = (ball.physicsBody.velocity.dx + ball.physicsBody.velocity.dx) / 2;
-	float dy = (ball.physicsBody.velocity.dy + ball.physicsBody.velocity.dy) / 2;
-
-	float speed = sqrt(dx*dx + dy*dy);
-
-	if ((speedball > kMaxSpeed) || (speed > kMaxSpeed)) {
-		ball.physicsBody.linearDamping += 0.2f;
-	} else {
-		ball.physicsBody.linearDamping = 10.0f;
-	}
 }
 
 @end
